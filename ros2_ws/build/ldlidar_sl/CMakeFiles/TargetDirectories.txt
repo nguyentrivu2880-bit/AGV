@@ -1,9 +1,0 @@
-/home/pi/agv_project/ros2_ws/build/ldlidar_sl/CMakeFiles/ldlidar_sl_node.dir
-/home/pi/agv_project/ros2_ws/build/ldlidar_sl/CMakeFiles/ldlidar_driver_static.dir
-/home/pi/agv_project/ros2_ws/build/ldlidar_sl/CMakeFiles/ldlidar_driver_shared.dir
-/home/pi/agv_project/ros2_ws/build/ldlidar_sl/CMakeFiles/edit_cache.dir
-/home/pi/agv_project/ros2_ws/build/ldlidar_sl/CMakeFiles/rebuild_cache.dir
-/home/pi/agv_project/ros2_ws/build/ldlidar_sl/CMakeFiles/list_install_components.dir
-/home/pi/agv_project/ros2_ws/build/ldlidar_sl/CMakeFiles/install.dir
-/home/pi/agv_project/ros2_ws/build/ldlidar_sl/CMakeFiles/install/local.dir
-/home/pi/agv_project/ros2_ws/build/ldlidar_sl/CMakeFiles/install/strip.dir

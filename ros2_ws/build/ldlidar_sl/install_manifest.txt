@@ -1,9 +1,0 @@
-/home/pi/agv_project/ros2_ws/install/ldlidar_sl/lib/ldlidar_driver/libldlidar_driver.a
-/home/pi/agv_project/ros2_ws/install/ldlidar_sl/share/ldlidar_driver/libldlidar_driver.so
-/home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/slbf.h
-/home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/serial_interface_linux.h
-/home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/sl_transform.h
-/home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/ldlidar_driver.h
-/home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/lipkg.h
-/home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/ldlidar_datatype.h
-/home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/log_module.h

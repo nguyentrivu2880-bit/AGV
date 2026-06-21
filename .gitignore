@@ -1,0 +1,29 @@
+# ROS2 generated folders
+build/
+install/
+log/
+
+# ROS2 workspace generated folders
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/
+
+# Python cache
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Colcon / test cache
+.pytest_cache/
+.coverage
+
+# Logs
+*.log
+
+# VS Code local settings
+.vscode/
+
+# System files
+.DS_Store
+Thumbs.db

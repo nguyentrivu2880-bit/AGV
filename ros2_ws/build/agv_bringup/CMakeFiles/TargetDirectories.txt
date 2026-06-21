@@ -1,9 +1,0 @@
-/home/pi/agv_project/ros2_ws/build/agv_bringup/CMakeFiles/uninstall.dir
-/home/pi/agv_project/ros2_ws/build/agv_bringup/CMakeFiles/agv_bringup_uninstall.dir
-/home/pi/agv_project/ros2_ws/build/agv_bringup/CMakeFiles/test.dir
-/home/pi/agv_project/ros2_ws/build/agv_bringup/CMakeFiles/edit_cache.dir
-/home/pi/agv_project/ros2_ws/build/agv_bringup/CMakeFiles/rebuild_cache.dir
-/home/pi/agv_project/ros2_ws/build/agv_bringup/CMakeFiles/list_install_components.dir
-/home/pi/agv_project/ros2_ws/build/agv_bringup/CMakeFiles/install.dir
-/home/pi/agv_project/ros2_ws/build/agv_bringup/CMakeFiles/install/local.dir
-/home/pi/agv_project/ros2_ws/build/agv_bringup/CMakeFiles/install/strip.dir

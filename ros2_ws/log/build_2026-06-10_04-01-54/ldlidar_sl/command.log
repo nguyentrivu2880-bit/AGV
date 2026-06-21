@@ -1,6 +1,0 @@
-Invoking command in '/home/pi/agv_project/ros2_ws/build/ldlidar_sl': /usr/bin/cmake /home/pi/agv_project/ros2_ws/ldlidar_ws/ldlidar_sl_sdk -DCMAKE_INSTALL_PREFIX=/home/pi/agv_project/ros2_ws/install/ldlidar_sl
-Invoked command in '/home/pi/agv_project/ros2_ws/build/ldlidar_sl' returned '0': /usr/bin/cmake /home/pi/agv_project/ros2_ws/ldlidar_ws/ldlidar_sl_sdk -DCMAKE_INSTALL_PREFIX=/home/pi/agv_project/ros2_ws/install/ldlidar_sl
-Invoking command in '/home/pi/agv_project/ros2_ws/build/ldlidar_sl': /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/ldlidar_sl -- -j4 -l4
-Invoked command in '/home/pi/agv_project/ros2_ws/build/ldlidar_sl' returned '0': /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/ldlidar_sl -- -j4 -l4
-Invoking command in '/home/pi/agv_project/ros2_ws/build/ldlidar_sl': /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/ldlidar_sl
-Invoked command in '/home/pi/agv_project/ros2_ws/build/ldlidar_sl' returned '0': /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/ldlidar_sl
