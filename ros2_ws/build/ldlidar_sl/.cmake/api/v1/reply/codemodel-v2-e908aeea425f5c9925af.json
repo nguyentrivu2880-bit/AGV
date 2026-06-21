@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-ae0d5f242fd47de2aef9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.3"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ldlidar_sl",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ldlidar_driver_shared::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ldlidar_driver_shared-03c6d2992015b4571065.json",
+					"name" : "ldlidar_driver_shared",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ldlidar_driver_static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ldlidar_driver_static-e27f873e838017dd204e.json",
+					"name" : "ldlidar_driver_static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ldlidar_sl_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ldlidar_sl_node-78b4dd76f458f1936511.json",
+					"name" : "ldlidar_sl_node",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/pi/agv_project/ros2_ws/build/ldlidar_sl",
+		"source" : "/home/pi/agv_project/ros2_ws/ldlidar_ws/ldlidar_sl_sdk"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

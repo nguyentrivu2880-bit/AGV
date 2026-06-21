@@ -1,0 +1,2 @@
+/usr/bin/ar qc libldlidar_driver.a CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/ldlidar_driver.cpp.o CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/lipkg.cpp.o CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/log_module.cpp.o CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/serial_interface_linux.cpp.o CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/sl_transform.cpp.o CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/slbf.cpp.o
+/usr/bin/ranlib libldlidar_driver.a

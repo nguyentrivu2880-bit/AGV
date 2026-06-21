@@ -1,0 +1,55 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Mode: Debug
+-- optional:-std=c++11 -Wall -Wextra -Wpedantic -g2 -ggdb
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/agv_project/ros2_ws/build/ldlidar_sl
+[  6%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/ldlidar_driver.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/log_module.cpp.o[0m
+[ 12%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/lipkg.cpp.o[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_shared.dir/ldlidar_driver/src/ldlidar_driver.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/serial_interface_linux.cpp.o[0m
+[ 37%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/sl_transform.cpp.o[0m
+[ 43%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_shared.dir/ldlidar_driver/src/lipkg.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_static.dir/ldlidar_driver/src/slbf.cpp.o[0m
+[ 56%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_shared.dir/ldlidar_driver/src/log_module.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_shared.dir/ldlidar_driver/src/serial_interface_linux.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_shared.dir/ldlidar_driver/src/sl_transform.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/ldlidar_driver_shared.dir/ldlidar_driver/src/slbf.cpp.o[0m
+[ 81%] [32m[1mLinking CXX static library libldlidar_driver.a[0m
+[ 81%] Built target ldlidar_driver_static
+[ 87%] [32mBuilding CXX object CMakeFiles/ldlidar_sl_node.dir/src/linux_demo/demo.cpp.o[0m
+[ 93%] [32m[1mLinking CXX shared library libldlidar_driver.so[0m
+[100%] [32m[1mLinking CXX executable ldlidar_sl_node[0m
+[100%] Built target ldlidar_driver_shared
+[100%] Built target ldlidar_sl_node
+-- Install configuration: ""
+-- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl/lib/ldlidar_driver/libldlidar_driver.a
+-- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl/share/ldlidar_driver/libldlidar_driver.so
+-- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include
+-- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/slbf.h
+-- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/serial_interface_linux.h
+-- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/sl_transform.h
+-- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/ldlidar_driver.h
+-- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/lipkg.h
+-- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/ldlidar_datatype.h
+-- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl/include/ldlidar_driver/include/log_module.h

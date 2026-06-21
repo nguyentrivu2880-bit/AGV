@@ -1,0 +1,43 @@
+[1.292s] Invoking command in '/home/pi/agv_project/ros2_ws/build/agv_lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/agv_bridge:/opt/ros/humble /usr/bin/cmake /home/pi/agv_project/ros2_ws/src/agv_lidar -DCMAKE_INSTALL_PREFIX=/home/pi/agv_project/ros2_ws/install/agv_lidar
+[1.715s] -- The C compiler identification is GNU 11.4.0
+[2.097s] -- The CXX compiler identification is GNU 11.4.0
+[2.143s] -- Detecting C compiler ABI info
+[2.643s] -- Detecting C compiler ABI info - done
+[2.677s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.679s] -- Detecting C compile features
+[2.682s] -- Detecting C compile features - done
+[2.698s] -- Detecting CXX compiler ABI info
+[3.229s] -- Detecting CXX compiler ABI info - done
+[3.267s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.269s] -- Detecting CXX compile features
+[3.271s] -- Detecting CXX compile features - done
+[3.309s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.618s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[5.862s] -- Configuring done
+[5.975s] -- Generating done
+[5.998s] -- Build files have been written to: /home/pi/agv_project/ros2_ws/build/agv_lidar
+[6.030s] Invoked command in '/home/pi/agv_project/ros2_ws/build/agv_lidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/agv_bridge:/opt/ros/humble /usr/bin/cmake /home/pi/agv_project/ros2_ws/src/agv_lidar -DCMAKE_INSTALL_PREFIX=/home/pi/agv_project/ros2_ws/install/agv_lidar
+[6.035s] Invoking command in '/home/pi/agv_project/ros2_ws/build/agv_lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/agv_bridge:/opt/ros/humble /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/agv_lidar -- -j4 -l4
+[6.251s] Invoked command in '/home/pi/agv_project/ros2_ws/build/agv_lidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/agv_bridge:/opt/ros/humble /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/agv_lidar -- -j4 -l4
+[6.298s] Invoking command in '/home/pi/agv_project/ros2_ws/build/agv_lidar': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/agv_bridge:/opt/ros/humble /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/agv_lidar
+[6.348s] -- Install configuration: ""
+[6.348s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/launch
+[6.349s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/launch/ld14.launch.py
+[6.350s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/config
+[6.350s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/config/lidar_params.yaml
+[6.353s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/ament_index/resource_index/package_run_dependencies/agv_lidar
+[6.356s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/ament_index/resource_index/parent_prefix_path/agv_lidar
+[6.358s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/environment/ament_prefix_path.sh
+[6.359s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/environment/ament_prefix_path.dsv
+[6.361s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/environment/path.sh
+[6.364s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/environment/path.dsv
+[6.375s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/local_setup.bash
+[6.376s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/local_setup.sh
+[6.389s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/local_setup.zsh
+[6.389s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/local_setup.dsv
+[6.392s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/package.dsv
+[6.393s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/ament_index/resource_index/packages/agv_lidar
+[6.394s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/cmake/agv_lidarConfig.cmake
+[6.394s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/cmake/agv_lidarConfig-version.cmake
+[6.395s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_lidar/share/agv_lidar/package.xml
+[6.413s] Invoked command in '/home/pi/agv_project/ros2_ws/build/agv_lidar' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/pi/ros2_ws/install/agv_bridge:/opt/ros/humble /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/agv_lidar

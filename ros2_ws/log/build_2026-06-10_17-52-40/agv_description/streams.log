@@ -1,0 +1,29 @@
+[0.076s] Invoking command in '/home/pi/agv_project/ros2_ws/build/agv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/agv_description -- -j4 -l4
+[0.512s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.224s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.601s] -- Added test 'lint_cmake' to check CMake code style
+[1.614s] -- Added test 'xmllint' to check XML markup files
+[1.622s] -- Configuring done
+[1.660s] -- Generating done
+[1.673s] -- Build files have been written to: /home/pi/agv_project/ros2_ws/build/agv_description
+[1.785s] Invoked command in '/home/pi/agv_project/ros2_ws/build/agv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/agv_description -- -j4 -l4
+[1.829s] Invoking command in '/home/pi/agv_project/ros2_ws/build/agv_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/agv_description
+[1.863s] -- Install configuration: ""
+[1.864s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/xacro
+[1.866s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/xacro/.gitkeep
+[1.867s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_description/share/ament_index/resource_index/package_run_dependencies/agv_description
+[1.869s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_description/share/ament_index/resource_index/parent_prefix_path/agv_description
+[1.869s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/environment/ament_prefix_path.sh
+[1.870s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/environment/ament_prefix_path.dsv
+[1.871s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/environment/path.sh
+[1.871s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/environment/path.dsv
+[1.873s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/local_setup.bash
+[1.874s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/local_setup.sh
+[1.875s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/local_setup.zsh
+[1.875s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/local_setup.dsv
+[1.881s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/package.dsv
+[1.881s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_description/share/ament_index/resource_index/packages/agv_description
+[1.882s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/cmake/agv_descriptionConfig.cmake
+[1.883s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/cmake/agv_descriptionConfig-version.cmake
+[1.884s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/package.xml
+[1.886s] Invoked command in '/home/pi/agv_project/ros2_ws/build/agv_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/agv_description

@@ -1,0 +1,36 @@
+[4.014s] Invoking command in '/home/pi/agv_project/ros2_ws/src/agv_bridge': PYTHONPATH=/home/pi/agv_project/ros2_ws/build/agv_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agv_bridge build --build-base /home/pi/agv_project/ros2_ws/build/agv_bridge/build install --record /home/pi/agv_project/ros2_ws/build/agv_bridge/install.log --single-version-externally-managed install_data
+[5.751s] running egg_info
+[5.754s] creating ../../build/agv_bridge/agv_bridge.egg-info
+[5.755s] writing ../../build/agv_bridge/agv_bridge.egg-info/PKG-INFO
+[5.759s] writing dependency_links to ../../build/agv_bridge/agv_bridge.egg-info/dependency_links.txt
+[5.761s] writing entry points to ../../build/agv_bridge/agv_bridge.egg-info/entry_points.txt
+[5.763s] writing requirements to ../../build/agv_bridge/agv_bridge.egg-info/requires.txt
+[5.764s] writing top-level names to ../../build/agv_bridge/agv_bridge.egg-info/top_level.txt
+[5.767s] writing manifest file '../../build/agv_bridge/agv_bridge.egg-info/SOURCES.txt'
+[5.779s] reading manifest file '../../build/agv_bridge/agv_bridge.egg-info/SOURCES.txt'
+[5.785s] writing manifest file '../../build/agv_bridge/agv_bridge.egg-info/SOURCES.txt'
+[5.787s] running build
+[5.788s] running build_py
+[5.790s] creating /home/pi/agv_project/ros2_ws/build/agv_bridge/build
+[5.791s] creating /home/pi/agv_project/ros2_ws/build/agv_bridge/build/lib
+[5.792s] creating /home/pi/agv_project/ros2_ws/build/agv_bridge/build/lib/agv_bridge
+[5.793s] copying agv_bridge/__init__.py -> /home/pi/agv_project/ros2_ws/build/agv_bridge/build/lib/agv_bridge
+[5.794s] copying agv_bridge/esp32_bridge_odom.py -> /home/pi/agv_project/ros2_ws/build/agv_bridge/build/lib/agv_bridge
+[5.797s] running install
+[5.800s] running install_lib
+[5.804s] creating /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge
+[5.805s] copying /home/pi/agv_project/ros2_ws/build/agv_bridge/build/lib/agv_bridge/__init__.py -> /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge
+[5.806s] copying /home/pi/agv_project/ros2_ws/build/agv_bridge/build/lib/agv_bridge/esp32_bridge_odom.py -> /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge
+[5.810s] byte-compiling /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge/__init__.py to __init__.cpython-310.pyc
+[5.812s] byte-compiling /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge/esp32_bridge_odom.py to esp32_bridge_odom.cpython-310.pyc
+[5.835s] running install_data
+[5.837s] creating /home/pi/agv_project/ros2_ws/install/agv_bridge/share/ament_index
+[5.839s] creating /home/pi/agv_project/ros2_ws/install/agv_bridge/share/ament_index/resource_index
+[5.841s] creating /home/pi/agv_project/ros2_ws/install/agv_bridge/share/ament_index/resource_index/packages
+[5.842s] copying resource/agv_bridge -> /home/pi/agv_project/ros2_ws/install/agv_bridge/share/ament_index/resource_index/packages
+[5.843s] copying package.xml -> /home/pi/agv_project/ros2_ws/install/agv_bridge/share/agv_bridge
+[5.844s] running install_egg_info
+[5.856s] Copying ../../build/agv_bridge/agv_bridge.egg-info to /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge-0.0.0-py3.10.egg-info
+[5.871s] running install_scripts
+[6.009s] writing list of installed files to '/home/pi/agv_project/ros2_ws/build/agv_bridge/install.log'
+[6.200s] Invoked command in '/home/pi/agv_project/ros2_ws/src/agv_bridge' returned '0': PYTHONPATH=/home/pi/agv_project/ros2_ws/build/agv_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/agv_bridge build --build-base /home/pi/agv_project/ros2_ws/build/agv_bridge/build install --record /home/pi/agv_project/ros2_ws/build/agv_bridge/install.log --single-version-externally-managed install_data

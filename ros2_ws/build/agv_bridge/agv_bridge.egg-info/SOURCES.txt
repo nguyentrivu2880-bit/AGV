@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../../build/agv_bridge/agv_bridge.egg-info/PKG-INFO
+../../build/agv_bridge/agv_bridge.egg-info/SOURCES.txt
+../../build/agv_bridge/agv_bridge.egg-info/dependency_links.txt
+../../build/agv_bridge/agv_bridge.egg-info/entry_points.txt
+../../build/agv_bridge/agv_bridge.egg-info/requires.txt
+../../build/agv_bridge/agv_bridge.egg-info/top_level.txt
+../../build/agv_bridge/agv_bridge.egg-info/zip-safe
+agv_bridge/__init__.py
+agv_bridge/esp32_bridge_odom.py
+resource/agv_bridge
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

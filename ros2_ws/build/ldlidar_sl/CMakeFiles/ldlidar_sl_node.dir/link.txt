@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/ldlidar_sl_node.dir/src/linux_demo/demo.cpp.o -o ldlidar_sl_node  libldlidar_driver.a -lpthread 

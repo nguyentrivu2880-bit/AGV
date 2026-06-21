@@ -1,0 +1,34 @@
+[0.082s] Invoking command in '/home/pi/agv_project/ros2_ws/build/ldlidar_sl_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/ldlidar_sl_ros2 -- -j4 -l4
+[0.504s] Consolidate compiler generated dependencies of target ldlidar_sl_ros2_node
+[0.636s] [100%] Built target ldlidar_sl_ros2_node
+[0.679s] Invoked command in '/home/pi/agv_project/ros2_ws/build/ldlidar_sl_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/ldlidar_sl_ros2 -- -j4 -l4
+[0.686s] Invoking command in '/home/pi/agv_project/ros2_ws/build/ldlidar_sl_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/ldlidar_sl_ros2
+[0.722s] -- Install configuration: ""
+[0.726s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/lib/ldlidar_sl_ros2/ldlidar_sl_ros2_node
+[0.728s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch
+[0.728s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/viewer_ld14p.launch.py
+[0.728s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/viewer_ld14.launch.py
+[0.729s] -- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/ld14p.launch.py
+[0.730s] -- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//launch/ld14.launch.py
+[0.731s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//rviz2
+[0.732s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//rviz2/ldlidar.rviz
+[0.733s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts
+[0.734s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts/ldlidar.rules
+[0.736s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts/create_udev_rules.sh
+[0.737s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2//scripts/delete_udev_rules.sh
+[0.738s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_sl_ros2
+[0.739s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_sl_ros2
+[0.739s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/ament_prefix_path.sh
+[0.739s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/ament_prefix_path.dsv
+[0.740s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/path.sh
+[0.741s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/environment/path.dsv
+[0.742s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.bash
+[0.743s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.sh
+[0.743s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.zsh
+[0.744s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/local_setup.dsv
+[0.744s] -- Installing: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/package.dsv
+[0.745s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ament_index/resource_index/packages/ldlidar_sl_ros2
+[0.746s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/cmake/ldlidar_sl_ros2Config.cmake
+[0.748s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/cmake/ldlidar_sl_ros2Config-version.cmake
+[0.750s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2/share/ldlidar_sl_ros2/package.xml
+[0.751s] Invoked command in '/home/pi/agv_project/ros2_ws/build/ldlidar_sl_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/ldlidar_sl_ros2
