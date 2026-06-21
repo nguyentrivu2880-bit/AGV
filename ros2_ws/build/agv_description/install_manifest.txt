@@ -1,3 +1,4 @@
+/home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/launch/display.launch.py
 /home/pi/agv_project/ros2_ws/install/agv_description/share/agv_description/xacro/agv_robot.xacro
 /home/pi/agv_project/ros2_ws/install/agv_description/share/ament_index/resource_index/package_run_dependencies/agv_description
 /home/pi/agv_project/ros2_ws/install/agv_description/share/ament_index/resource_index/parent_prefix_path/agv_description

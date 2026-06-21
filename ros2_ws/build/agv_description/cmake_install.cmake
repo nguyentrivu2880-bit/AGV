@@ -43,7 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/agv_description" TYPE DIRECTORY FILES "/home/pi/agv_project/ros2_ws/src/agv_description/xacro")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/agv_description" TYPE DIRECTORY FILES
+    "/home/pi/agv_project/ros2_ws/src/agv_description/launch"
+    "/home/pi/agv_project/ros2_ws/src/agv_description/xacro"
+    REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

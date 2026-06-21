@@ -1,0 +1,168 @@
+[0.000000] (-) TimerEvent: {}
+[0.004216] (-) JobUnselected: {'identifier': 'agv_description'}
+[0.004562] (-) JobUnselected: {'identifier': 'agv_lidar'}
+[0.004779] (-) JobUnselected: {'identifier': 'ldlidar_sl'}
+[0.004972] (-) JobUnselected: {'identifier': 'ldlidar_sl_ros2'}
+[0.005151] (agv_bridge) JobQueued: {'identifier': 'agv_bridge', 'dependencies': OrderedDict()}
+[0.005338] (agv_bringup) JobQueued: {'identifier': 'agv_bringup', 'dependencies': OrderedDict([('agv_bridge', '/home/pi/agv_project/ros2_ws/install/agv_bridge'), ('agv_description', '/home/pi/agv_project/ros2_ws/install/agv_description'), ('ldlidar_sl_ros2', '/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2'), ('agv_lidar', '/home/pi/agv_project/ros2_ws/install/agv_lidar')])}
+[0.005610] (agv_bridge) JobStarted: {'identifier': 'agv_bridge'}
+[0.081104] (-) TimerEvent: {}
+[0.181784] (-) TimerEvent: {}
+[0.282280] (-) TimerEvent: {}
+[0.382775] (-) TimerEvent: {}
+[0.483321] (-) TimerEvent: {}
+[0.584248] (-) TimerEvent: {}
+[0.684698] (-) TimerEvent: {}
+[0.785137] (-) TimerEvent: {}
+[0.885600] (-) TimerEvent: {}
+[0.986082] (-) TimerEvent: {}
+[1.086548] (-) TimerEvent: {}
+[1.187045] (-) TimerEvent: {}
+[1.287583] (-) TimerEvent: {}
+[1.387991] (-) TimerEvent: {}
+[1.488419] (-) TimerEvent: {}
+[1.588858] (-) TimerEvent: {}
+[1.690057] (-) TimerEvent: {}
+[1.790695] (-) TimerEvent: {}
+[1.891404] (-) TimerEvent: {}
+[1.994381] (-) TimerEvent: {}
+[2.094922] (-) TimerEvent: {}
+[2.195599] (-) TimerEvent: {}
+[2.296187] (-) TimerEvent: {}
+[2.397556] (-) TimerEvent: {}
+[2.498362] (-) TimerEvent: {}
+[2.598898] (-) TimerEvent: {}
+[2.699426] (-) TimerEvent: {}
+[2.799896] (-) TimerEvent: {}
+[2.900505] (-) TimerEvent: {}
+[3.001008] (-) TimerEvent: {}
+[3.101473] (-) TimerEvent: {}
+[3.203078] (-) TimerEvent: {}
+[3.303593] (-) TimerEvent: {}
+[3.404188] (-) TimerEvent: {}
+[3.504642] (-) TimerEvent: {}
+[3.618932] (-) TimerEvent: {}
+[3.719449] (-) TimerEvent: {}
+[3.819979] (-) TimerEvent: {}
+[3.920502] (-) TimerEvent: {}
+[4.021314] (-) TimerEvent: {}
+[4.121834] (-) TimerEvent: {}
+[4.222325] (-) TimerEvent: {}
+[4.322827] (-) TimerEvent: {}
+[4.423414] (-) TimerEvent: {}
+[4.524070] (-) TimerEvent: {}
+[4.624577] (-) TimerEvent: {}
+[4.725056] (-) TimerEvent: {}
+[4.825559] (-) TimerEvent: {}
+[4.926708] (-) TimerEvent: {}
+[5.029964] (-) TimerEvent: {}
+[5.131275] (-) TimerEvent: {}
+[5.232087] (-) TimerEvent: {}
+[5.332810] (-) TimerEvent: {}
+[5.433370] (-) TimerEvent: {}
+[5.533866] (-) TimerEvent: {}
+[5.634534] (-) TimerEvent: {}
+[5.735056] (-) TimerEvent: {}
+[5.836020] (-) TimerEvent: {}
+[5.936703] (-) TimerEvent: {}
+[6.037291] (-) TimerEvent: {}
+[6.137881] (-) TimerEvent: {}
+[6.238354] (-) TimerEvent: {}
+[6.338963] (-) TimerEvent: {}
+[6.439603] (-) TimerEvent: {}
+[6.540118] (-) TimerEvent: {}
+[6.640584] (-) TimerEvent: {}
+[6.741047] (-) TimerEvent: {}
+[6.841528] (-) TimerEvent: {}
+[6.942088] (-) TimerEvent: {}
+[7.042881] (-) TimerEvent: {}
+[7.143412] (-) TimerEvent: {}
+[7.244307] (-) TimerEvent: {}
+[7.320032] (agv_bridge) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/agv_bridge', 'build', '--build-base', '/home/pi/agv_project/ros2_ws/build/agv_bridge/build', 'install', '--record', '/home/pi/agv_project/ros2_ws/build/agv_bridge/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi/agv_project/ros2_ws/src/agv_bridge', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/pi', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'USER': 'pi', 'SSH_CLIENT': '192.168.1.138 40426 22', 'LC_TIME': 'C.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/out/nls.messages.json","locale":"en","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'tty', 'DEBUG': 'release', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'VSCODE_RECONNECTION_GRACE_TIME': '10800000', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-ea1dea35-0163-4dbe-9f71-2d49243e083f.sock', 'ROS_PYTHON_VERSION': '3', 'PAGER': 'cat', 'LC_MONETARY': 'C.UTF-8', 'LC_CTYPE': 'C.UTF-8', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'COLCON_PREFIX_PATH': '/home/pi/ldlidar_ros2_ws/install', 'APPLICATION_INSIGHTS_NO_STATSBEAT': 'true', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pi', 'VSCODE_HANDLES_SIGPIPE': 'true', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'TERM': 'dumb', 'XDG_SESSION_ID': '1', 'VSCODE_CLI_REQUIRE_TOKEN': '30592e3c-d44d-4acb-a7fe-6d60bbf50799', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/pi/.codex/tmp/arg0/codex-arg0MhvAA2:/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/openai.chatgpt-26.616.31447-linux-arm64/bin/linux-aarch64', 'VSCODE_AGENT_FOLDER': '/home/pi/.vscode-server', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'GH_PAGER': 'cat', 'LS_COLORS': '', 'AMENT_PREFIX_PATH': '/opt/ros/humble:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'ELECTRON_RUN_AS_NODE': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019eb11c-afc2-7c53-b52d-83c16eda0633', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'GIT_PAGER': 'cat', 'PWD': '/home/pi/agv_project/ros2_ws/build/agv_bridge', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.138 40426 192.168.1.18 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/agv_project/ros2_ws/build/agv_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2'}, 'shell': False}
+[7.344397] (-) TimerEvent: {}
+[7.444921] (-) TimerEvent: {}
+[7.545440] (-) TimerEvent: {}
+[7.645954] (-) TimerEvent: {}
+[7.746686] (-) TimerEvent: {}
+[7.847152] (-) TimerEvent: {}
+[7.947599] (-) TimerEvent: {}
+[8.048087] (-) TimerEvent: {}
+[8.148569] (-) TimerEvent: {}
+[8.249085] (-) TimerEvent: {}
+[8.349482] (-) TimerEvent: {}
+[8.450056] (-) TimerEvent: {}
+[8.550497] (-) TimerEvent: {}
+[8.650896] (-) TimerEvent: {}
+[8.751331] (-) TimerEvent: {}
+[8.851761] (-) TimerEvent: {}
+[8.952162] (-) TimerEvent: {}
+[8.977127] (agv_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[8.981020] (agv_bridge) StdoutLine: {'line': b'writing ../../build/agv_bridge/agv_bridge.egg-info/PKG-INFO\n'}
+[8.984199] (agv_bridge) StdoutLine: {'line': b'writing dependency_links to ../../build/agv_bridge/agv_bridge.egg-info/dependency_links.txt\n'}
+[8.987683] (agv_bridge) StdoutLine: {'line': b'writing entry points to ../../build/agv_bridge/agv_bridge.egg-info/entry_points.txt\n'}
+[8.990252] (agv_bridge) StdoutLine: {'line': b'writing requirements to ../../build/agv_bridge/agv_bridge.egg-info/requires.txt\n'}
+[8.992797] (agv_bridge) StdoutLine: {'line': b'writing top-level names to ../../build/agv_bridge/agv_bridge.egg-info/top_level.txt\n'}
+[9.010897] (agv_bridge) StdoutLine: {'line': b"reading manifest file '../../build/agv_bridge/agv_bridge.egg-info/SOURCES.txt'\n"}
+[9.017443] (agv_bridge) StdoutLine: {'line': b"writing manifest file '../../build/agv_bridge/agv_bridge.egg-info/SOURCES.txt'\n"}
+[9.019087] (agv_bridge) StdoutLine: {'line': b'running build\n'}
+[9.020308] (agv_bridge) StdoutLine: {'line': b'running build_py\n'}
+[9.021842] (agv_bridge) StdoutLine: {'line': b'copying agv_bridge/esp32_bridge_odom.py -> /home/pi/agv_project/ros2_ws/build/agv_bridge/build/lib/agv_bridge\n'}
+[9.027352] (agv_bridge) StdoutLine: {'line': b'running install\n'}
+[9.030883] (agv_bridge) StdoutLine: {'line': b'running install_lib\n'}
+[9.041036] (agv_bridge) StdoutLine: {'line': b'copying /home/pi/agv_project/ros2_ws/build/agv_bridge/build/lib/agv_bridge/esp32_bridge_odom.py -> /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge\n'}
+[9.048439] (agv_bridge) StdoutLine: {'line': b'byte-compiling /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge/esp32_bridge_odom.py to esp32_bridge_odom.cpython-310.pyc\n'}
+[9.052428] (-) TimerEvent: {}
+[9.073886] (agv_bridge) StdoutLine: {'line': b'running install_data\n'}
+[9.076187] (agv_bridge) StdoutLine: {'line': b'running install_egg_info\n'}
+[9.087377] (agv_bridge) StdoutLine: {'line': b"removing '/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[9.091087] (agv_bridge) StdoutLine: {'line': b'Copying ../../build/agv_bridge/agv_bridge.egg-info to /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge-0.0.0-py3.10.egg-info\n'}
+[9.107964] (agv_bridge) StdoutLine: {'line': b'running install_scripts\n'}
+[9.152607] (-) TimerEvent: {}
+[9.253046] (-) TimerEvent: {}
+[9.261787] (agv_bridge) StdoutLine: {'line': b'Installing esp32_bridge_odom script to /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/agv_bridge\n'}
+[9.265833] (agv_bridge) StdoutLine: {'line': b"writing list of installed files to '/home/pi/agv_project/ros2_ws/build/agv_bridge/install.log'\n"}
+[9.353286] (-) TimerEvent: {}
+[9.453817] (-) TimerEvent: {}
+[9.486985] (agv_bridge) CommandEnded: {'returncode': 0}
+[9.554018] (-) TimerEvent: {}
+[9.617861] (agv_bridge) JobEnded: {'identifier': 'agv_bridge', 'rc': 0}
+[9.621602] (agv_bringup) JobStarted: {'identifier': 'agv_bringup'}
+[9.654198] (-) TimerEvent: {}
+[9.706942] (agv_bringup) JobProgress: {'identifier': 'agv_bringup', 'progress': 'cmake'}
+[9.710997] (agv_bringup) JobProgress: {'identifier': 'agv_bringup', 'progress': 'build'}
+[9.716691] (agv_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/agv_project/ros2_ws/build/agv_bringup', '--', '-j4', '-l4'], 'cwd': '/home/pi/agv_project/ros2_ws/build/agv_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/pi'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.138 40426 22'), ('LC_TIME', 'C.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ea1dea35-0163-4dbe-9f71-2d49243e083f.sock'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('LC_MONETARY', 'C.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('COLCON_PREFIX_PATH', '/home/pi/ldlidar_ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('TERM', 'dumb'), ('XDG_SESSION_ID', '1'), ('VSCODE_CLI_REQUIRE_TOKEN', '30592e3c-d44d-4acb-a7fe-6d60bbf50799'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.codex/tmp/arg0/codex-arg0MhvAA2:/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/openai.chatgpt-26.616.31447-linux-arm64/bin/linux-aarch64'), ('VSCODE_AGENT_FOLDER', '/home/pi/.vscode-server'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('GH_PAGER', 'cat'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:/opt/ros/humble:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019eb11c-afc2-7c53-b52d-83c16eda0633'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('GIT_PAGER', 'cat'), ('PWD', '/home/pi/agv_project/ros2_ws/build/agv_bringup'), ('LC_ALL', 'C.UTF-8'), ('SSH_CONNECTION', '192.168.1.138 40426 192.168.1.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble')]), 'shell': False}
+[9.754428] (-) TimerEvent: {}
+[9.855152] (-) TimerEvent: {}
+[9.955639] (-) TimerEvent: {}
+[9.974144] (agv_bringup) CommandEnded: {'returncode': 0}
+[9.976063] (agv_bringup) JobProgress: {'identifier': 'agv_bringup', 'progress': 'install'}
+[10.021186] (agv_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/agv_project/ros2_ws/build/agv_bringup'], 'cwd': '/home/pi/agv_project/ros2_ws/build/agv_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/pi'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.138 40426 22'), ('LC_TIME', 'C.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-ea1dea35-0163-4dbe-9f71-2d49243e083f.sock'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('LC_MONETARY', 'C.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('COLCON_PREFIX_PATH', '/home/pi/ldlidar_ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('TERM', 'dumb'), ('XDG_SESSION_ID', '1'), ('VSCODE_CLI_REQUIRE_TOKEN', '30592e3c-d44d-4acb-a7fe-6d60bbf50799'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.codex/tmp/arg0/codex-arg0MhvAA2:/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/openai.chatgpt-26.616.31447-linux-arm64/bin/linux-aarch64'), ('VSCODE_AGENT_FOLDER', '/home/pi/.vscode-server'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('GH_PAGER', 'cat'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:/opt/ros/humble:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019eb11c-afc2-7c53-b52d-83c16eda0633'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('GIT_PAGER', 'cat'), ('PWD', '/home/pi/agv_project/ros2_ws/build/agv_bringup'), ('LC_ALL', 'C.UTF-8'), ('SSH_CONNECTION', '192.168.1.138 40426 192.168.1.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble')]), 'shell': False}
+[10.055853] (-) TimerEvent: {}
+[10.078965] (agv_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.081853] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/behavior_trees\n'}
+[10.085202] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/behavior_trees/navigate_to_pose_fast_replanning.xml\n'}
+[10.087855] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/config\n'}
+[10.088513] (agv_bringup) StdoutLine: {'line': b'-- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/config/nav2_params.yaml\n'}
+[10.090583] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/launch\n'}
+[10.105767] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/launch/bringup.launch.py\n'}
+[10.109276] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/launch/navigation.launch.py\n'}
+[10.110037] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/ament_index/resource_index/package_run_dependencies/agv_bringup\n'}
+[10.110766] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/ament_index/resource_index/parent_prefix_path/agv_bringup\n'}
+[10.111362] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/ament_prefix_path.sh\n'}
+[10.117414] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/ament_prefix_path.dsv\n'}
+[10.136009] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/path.sh\n'}
+[10.136882] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/path.dsv\n'}
+[10.137582] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.bash\n'}
+[10.139797] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.sh\n'}
+[10.141002] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.zsh\n'}
+[10.141847] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.dsv\n'}
+[10.148361] (agv_bringup) StdoutLine: {'line': b'-- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.dsv\n'}
+[10.150470] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/ament_index/resource_index/packages/agv_bringup\n'}
+[10.153209] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/cmake/agv_bringupConfig.cmake\n'}
+[10.154127] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/cmake/agv_bringupConfig-version.cmake\n'}
+[10.154972] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.xml\n'}
+[10.155675] (agv_bringup) CommandEnded: {'returncode': 0}
+[10.160193] (-) TimerEvent: {}
+[10.260680] (-) TimerEvent: {}
+[10.277158] (agv_bringup) JobEnded: {'identifier': 'agv_bringup', 'rc': 0}
+[10.280478] (-) EventReactorShutdown: {}

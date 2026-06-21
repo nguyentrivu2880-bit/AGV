@@ -1,1 +1,1 @@
-/home/pi/ros2_ws/install/ldlidar_sl_ros2:/home/pi/ros2_ws/install/agv_lidar:/home/pi/ros2_ws/install/agv_description:/home/pi/ros2_ws/install/agv_bringup:/home/pi/ros2_ws/install/agv_bridge:/opt/ros/humble:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2
+/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:/opt/ros/humble:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2

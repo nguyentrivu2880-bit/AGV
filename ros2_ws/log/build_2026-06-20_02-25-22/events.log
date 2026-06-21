@@ -1,0 +1,341 @@
+[0.000000] (-) TimerEvent: {}
+[0.000373] (-) JobUnselected: {'identifier': 'agv_bridge'}
+[0.000544] (-) JobUnselected: {'identifier': 'agv_description'}
+[0.000681] (-) JobUnselected: {'identifier': 'agv_lidar'}
+[0.000792] (-) JobUnselected: {'identifier': 'ldlidar_sl'}
+[0.000940] (-) JobUnselected: {'identifier': 'ldlidar_sl_ros2'}
+[0.001109] (agv_bringup) JobQueued: {'identifier': 'agv_bringup', 'dependencies': OrderedDict([('agv_bridge', '/home/pi/agv_project/ros2_ws/install/agv_bridge'), ('agv_description', '/home/pi/agv_project/ros2_ws/install/agv_description'), ('ldlidar_sl_ros2', '/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2'), ('agv_lidar', '/home/pi/agv_project/ros2_ws/install/agv_lidar')])}
+[0.006158] (agv_bringup) JobStarted: {'identifier': 'agv_bringup'}
+[0.087102] (agv_bringup) JobProgress: {'identifier': 'agv_bringup', 'progress': 'cmake'}
+[0.092543] (agv_bringup) JobProgress: {'identifier': 'agv_bringup', 'progress': 'build'}
+[0.095623] (agv_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/agv_project/ros2_ws/build/agv_bringup', '--', '-j4', '-l4'], 'cwd': '/home/pi/agv_project/ros2_ws/build/agv_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/pi'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.138 53912 22'), ('LC_TIME', 'C.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5bc94a80-07c5-4920-9deb-3fd120b6f6ce.sock'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('LC_MONETARY', 'C.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('COLCON_PREFIX_PATH', '/home/pi/ldlidar_ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('TERM', 'dumb'), ('XDG_SESSION_ID', '1'), ('VSCODE_CLI_REQUIRE_TOKEN', '5cdcb202-8048-4186-bcc4-8ee14ba5b925'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.codex/tmp/arg0/codex-arg0tRcgHz:/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/openai.chatgpt-26.616.31447-linux-arm64/bin/linux-aarch64'), ('VSCODE_AGENT_FOLDER', '/home/pi/.vscode-server'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('GH_PAGER', 'cat'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:/opt/ros/humble:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019eb11c-afc2-7c53-b52d-83c16eda0633'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('GIT_PAGER', 'cat'), ('PWD', '/home/pi/agv_project/ros2_ws/build/agv_bringup'), ('LC_ALL', 'C.UTF-8'), ('SSH_CONNECTION', '192.168.1.138 53912 192.168.1.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble')]), 'shell': False}
+[0.103811] (-) TimerEvent: {}
+[0.204211] (-) TimerEvent: {}
+[0.304712] (-) TimerEvent: {}
+[0.359697] (agv_bringup) CommandEnded: {'returncode': 0}
+[0.362045] (agv_bringup) JobProgress: {'identifier': 'agv_bringup', 'progress': 'install'}
+[0.405148] (-) TimerEvent: {}
+[0.416354] (agv_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/agv_project/ros2_ws/build/agv_bringup'], 'cwd': '/home/pi/agv_project/ros2_ws/build/agv_bringup', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/home/pi'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('CODEX_CI', '1'), ('USER', 'pi'), ('SSH_CLIENT', '192.168.1.138 53912 22'), ('LC_TIME', 'C.UTF-8'), ('CODEX_INTERNAL_ORIGINATOR_OVERRIDE', 'codex_vscode'), ('VSCODE_NLS_CONFIG', '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/out/nls.messages.json","locale":"en","availableLanguages":{}}'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('DEBUG', 'release'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/pi'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-5bc94a80-07c5-4920-9deb-3fd120b6f6ce.sock'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('LC_MONETARY', 'C.UTF-8'), ('LC_CTYPE', 'C.UTF-8'), ('NO_COLOR', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', ''), ('COLCON_PREFIX_PATH', '/home/pi/ldlidar_ros2_ws/install'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'pi'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('RUST_LOG', 'warn'), ('TERM', 'dumb'), ('XDG_SESSION_ID', '1'), ('VSCODE_CLI_REQUIRE_TOKEN', '5cdcb202-8048-4186-bcc4-8ee14ba5b925'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/pi/.codex/tmp/arg0/codex-arg0tRcgHz:/home/pi/.vscode-server/cli/servers/Stable-1b50d58d73426c9171299ec4037d01365d995b78/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/openai.chatgpt-26.616.31447-linux-arm64/bin/linux-aarch64'), ('VSCODE_AGENT_FOLDER', '/home/pi/.vscode-server'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CODEX_SANDBOX_NETWORK_DISABLED', '1'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('GH_PAGER', 'cat'), ('LS_COLORS', ''), ('AMENT_PREFIX_PATH', '/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:/opt/ros/humble:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('ELECTRON_RUN_AS_NODE', '1'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CODEX_THREAD_ID', '019eb11c-afc2-7c53-b52d-83c16eda0633'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('GIT_PAGER', 'cat'), ('PWD', '/home/pi/agv_project/ros2_ws/build/agv_bringup'), ('LC_ALL', 'C.UTF-8'), ('SSH_CONNECTION', '192.168.1.138 53912 192.168.1.18 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble')]), 'shell': False}
+[0.473894] (agv_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.474818] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/behavior_trees\n'}
+[0.477263] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/behavior_trees/navigate_to_pose_fast_replanning.xml\n'}
+[0.477932] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/config\n'}
+[0.479172] (agv_bringup) StdoutLine: {'line': b'-- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/config/nav2_params.yaml\n'}
+[0.481373] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/launch\n'}
+[0.485665] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/launch/bringup.launch.py\n'}
+[0.491353] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/launch/navigation.launch.py\n'}
+[0.495519] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/ament_index/resource_index/package_run_dependencies/agv_bringup\n'}
+[0.496000] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/ament_index/resource_index/parent_prefix_path/agv_bringup\n'}
+[0.496417] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/ament_prefix_path.sh\n'}
+[0.496972] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/ament_prefix_path.dsv\n'}
+[0.498072] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/path.sh\n'}
+[0.499295] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/path.dsv\n'}
+[0.499933] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.bash\n'}
+[0.500666] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.sh\n'}
+[0.503392] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.zsh\n'}
+[0.504633] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.dsv\n'}
+[0.505454] (-) TimerEvent: {}
+[0.505667] (agv_bringup) StdoutLine: {'line': b'-- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.dsv\n'}
+[0.506323] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/ament_index/resource_index/packages/agv_bringup\n'}
+[0.507036] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/cmake/agv_bringupConfig.cmake\n'}
+[0.507709] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/cmake/agv_bringupConfig-version.cmake\n'}
+[0.508676] (agv_bringup) StdoutLine: {'line': b'-- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.xml\n'}
+[0.606245] (-) TimerEvent: {}
+[0.706699] (-) TimerEvent: {}
+[0.807231] (-) TimerEvent: {}
+[0.907703] (-) TimerEvent: {}
+[1.008280] (-) TimerEvent: {}
+[1.108795] (-) TimerEvent: {}
+[1.209453] (-) TimerEvent: {}
+[1.310257] (-) TimerEvent: {}
+[1.410857] (-) TimerEvent: {}
+[1.511390] (-) TimerEvent: {}
+[1.611885] (-) TimerEvent: {}
+[1.712562] (-) TimerEvent: {}
+[1.813895] (-) TimerEvent: {}
+[1.914439] (-) TimerEvent: {}
+[2.015132] (-) TimerEvent: {}
+[2.115807] (-) TimerEvent: {}
+[2.216477] (-) TimerEvent: {}
+[2.316996] (-) TimerEvent: {}
+[2.417445] (-) TimerEvent: {}
+[2.517930] (-) TimerEvent: {}
+[2.618449] (-) TimerEvent: {}
+[2.719023] (-) TimerEvent: {}
+[2.819499] (-) TimerEvent: {}
+[2.919952] (-) TimerEvent: {}
+[3.020403] (-) TimerEvent: {}
+[3.120936] (-) TimerEvent: {}
+[3.221515] (-) TimerEvent: {}
+[3.322062] (-) TimerEvent: {}
+[3.422608] (-) TimerEvent: {}
+[3.523143] (-) TimerEvent: {}
+[3.623700] (-) TimerEvent: {}
+[3.724197] (-) TimerEvent: {}
+[3.824715] (-) TimerEvent: {}
+[3.925341] (-) TimerEvent: {}
+[4.025880] (-) TimerEvent: {}
+[4.126638] (-) TimerEvent: {}
+[4.227299] (-) TimerEvent: {}
+[4.327879] (-) TimerEvent: {}
+[4.428466] (-) TimerEvent: {}
+[4.529029] (-) TimerEvent: {}
+[4.629643] (-) TimerEvent: {}
+[4.730287] (-) TimerEvent: {}
+[4.831312] (-) TimerEvent: {}
+[4.932385] (-) TimerEvent: {}
+[5.033029] (-) TimerEvent: {}
+[5.133562] (-) TimerEvent: {}
+[5.234323] (-) TimerEvent: {}
+[5.334818] (-) TimerEvent: {}
+[5.435335] (-) TimerEvent: {}
+[5.535883] (-) TimerEvent: {}
+[5.636387] (-) TimerEvent: {}
+[5.736885] (-) TimerEvent: {}
+[5.837363] (-) TimerEvent: {}
+[5.937895] (-) TimerEvent: {}
+[6.038380] (-) TimerEvent: {}
+[6.138980] (-) TimerEvent: {}
+[6.239465] (-) TimerEvent: {}
+[6.339907] (-) TimerEvent: {}
+[6.440352] (-) TimerEvent: {}
+[6.540898] (-) TimerEvent: {}
+[6.641395] (-) TimerEvent: {}
+[6.741926] (-) TimerEvent: {}
+[6.842412] (-) TimerEvent: {}
+[6.943382] (-) TimerEvent: {}
+[7.044056] (-) TimerEvent: {}
+[7.144620] (-) TimerEvent: {}
+[7.245213] (-) TimerEvent: {}
+[7.345797] (-) TimerEvent: {}
+[7.446316] (-) TimerEvent: {}
+[7.546787] (-) TimerEvent: {}
+[7.647415] (-) TimerEvent: {}
+[7.748009] (-) TimerEvent: {}
+[7.848796] (-) TimerEvent: {}
+[7.949562] (-) TimerEvent: {}
+[8.050624] (-) TimerEvent: {}
+[8.151243] (-) TimerEvent: {}
+[8.251829] (-) TimerEvent: {}
+[8.352438] (-) TimerEvent: {}
+[8.453086] (-) TimerEvent: {}
+[8.553640] (-) TimerEvent: {}
+[8.654190] (-) TimerEvent: {}
+[8.754711] (-) TimerEvent: {}
+[8.855240] (-) TimerEvent: {}
+[8.955737] (-) TimerEvent: {}
+[9.056259] (-) TimerEvent: {}
+[9.156798] (-) TimerEvent: {}
+[9.257319] (-) TimerEvent: {}
+[9.357868] (-) TimerEvent: {}
+[9.458408] (-) TimerEvent: {}
+[9.558926] (-) TimerEvent: {}
+[9.659431] (-) TimerEvent: {}
+[9.759958] (-) TimerEvent: {}
+[9.860428] (-) TimerEvent: {}
+[9.960958] (-) TimerEvent: {}
+[10.061540] (-) TimerEvent: {}
+[10.162027] (-) TimerEvent: {}
+[10.262516] (-) TimerEvent: {}
+[10.363010] (-) TimerEvent: {}
+[10.463504] (-) TimerEvent: {}
+[10.563989] (-) TimerEvent: {}
+[10.664495] (-) TimerEvent: {}
+[10.765069] (-) TimerEvent: {}
+[10.865633] (-) TimerEvent: {}
+[10.966051] (-) TimerEvent: {}
+[11.066506] (-) TimerEvent: {}
+[11.167068] (-) TimerEvent: {}
+[11.267669] (-) TimerEvent: {}
+[11.368322] (-) TimerEvent: {}
+[11.469001] (-) TimerEvent: {}
+[11.569528] (-) TimerEvent: {}
+[11.670129] (-) TimerEvent: {}
+[11.770703] (-) TimerEvent: {}
+[11.871320] (-) TimerEvent: {}
+[11.972246] (-) TimerEvent: {}
+[12.072967] (-) TimerEvent: {}
+[12.173609] (-) TimerEvent: {}
+[12.274165] (-) TimerEvent: {}
+[12.374735] (-) TimerEvent: {}
+[12.475324] (-) TimerEvent: {}
+[12.575863] (-) TimerEvent: {}
+[12.676401] (-) TimerEvent: {}
+[12.776980] (-) TimerEvent: {}
+[12.877472] (-) TimerEvent: {}
+[12.978006] (-) TimerEvent: {}
+[13.078476] (-) TimerEvent: {}
+[13.178956] (-) TimerEvent: {}
+[13.279497] (-) TimerEvent: {}
+[13.379993] (-) TimerEvent: {}
+[13.480449] (-) TimerEvent: {}
+[13.581059] (-) TimerEvent: {}
+[13.681545] (-) TimerEvent: {}
+[13.782005] (-) TimerEvent: {}
+[13.882533] (-) TimerEvent: {}
+[13.983060] (-) TimerEvent: {}
+[14.083551] (-) TimerEvent: {}
+[14.184091] (-) TimerEvent: {}
+[14.284566] (-) TimerEvent: {}
+[14.385097] (-) TimerEvent: {}
+[14.485567] (-) TimerEvent: {}
+[14.586072] (-) TimerEvent: {}
+[14.686574] (-) TimerEvent: {}
+[14.787324] (-) TimerEvent: {}
+[14.887803] (-) TimerEvent: {}
+[14.988360] (-) TimerEvent: {}
+[15.089069] (-) TimerEvent: {}
+[15.189743] (-) TimerEvent: {}
+[15.290219] (-) TimerEvent: {}
+[15.390779] (-) TimerEvent: {}
+[15.491386] (-) TimerEvent: {}
+[15.591974] (-) TimerEvent: {}
+[15.692590] (-) TimerEvent: {}
+[15.793195] (-) TimerEvent: {}
+[15.893737] (-) TimerEvent: {}
+[15.994313] (-) TimerEvent: {}
+[16.094876] (-) TimerEvent: {}
+[16.195356] (-) TimerEvent: {}
+[16.295903] (-) TimerEvent: {}
+[16.396495] (-) TimerEvent: {}
+[16.497057] (-) TimerEvent: {}
+[16.597574] (-) TimerEvent: {}
+[16.698104] (-) TimerEvent: {}
+[16.798573] (-) TimerEvent: {}
+[16.899090] (-) TimerEvent: {}
+[16.999647] (-) TimerEvent: {}
+[17.100166] (-) TimerEvent: {}
+[17.200677] (-) TimerEvent: {}
+[17.301656] (-) TimerEvent: {}
+[17.402221] (-) TimerEvent: {}
+[17.503010] (-) TimerEvent: {}
+[17.603620] (-) TimerEvent: {}
+[17.704133] (-) TimerEvent: {}
+[17.804672] (-) TimerEvent: {}
+[17.905235] (-) TimerEvent: {}
+[18.005759] (-) TimerEvent: {}
+[18.106335] (-) TimerEvent: {}
+[18.206998] (-) TimerEvent: {}
+[18.307572] (-) TimerEvent: {}
+[18.408152] (-) TimerEvent: {}
+[18.508752] (-) TimerEvent: {}
+[18.609441] (-) TimerEvent: {}
+[18.710295] (-) TimerEvent: {}
+[18.811068] (-) TimerEvent: {}
+[18.911768] (-) TimerEvent: {}
+[19.012875] (-) TimerEvent: {}
+[19.113450] (-) TimerEvent: {}
+[19.213966] (-) TimerEvent: {}
+[19.314530] (-) TimerEvent: {}
+[19.415016] (-) TimerEvent: {}
+[19.515539] (-) TimerEvent: {}
+[19.616091] (-) TimerEvent: {}
+[19.716632] (-) TimerEvent: {}
+[19.817208] (-) TimerEvent: {}
+[19.917729] (-) TimerEvent: {}
+[20.018192] (-) TimerEvent: {}
+[20.118696] (-) TimerEvent: {}
+[20.219229] (-) TimerEvent: {}
+[20.319722] (-) TimerEvent: {}
+[20.420232] (-) TimerEvent: {}
+[20.520934] (-) TimerEvent: {}
+[20.621535] (-) TimerEvent: {}
+[20.722077] (-) TimerEvent: {}
+[20.822605] (-) TimerEvent: {}
+[20.923110] (-) TimerEvent: {}
+[21.023600] (-) TimerEvent: {}
+[21.124114] (-) TimerEvent: {}
+[21.224609] (-) TimerEvent: {}
+[21.325121] (-) TimerEvent: {}
+[21.425634] (-) TimerEvent: {}
+[21.526178] (-) TimerEvent: {}
+[21.627261] (-) TimerEvent: {}
+[21.727868] (-) TimerEvent: {}
+[21.828415] (-) TimerEvent: {}
+[21.928947] (-) TimerEvent: {}
+[22.029495] (-) TimerEvent: {}
+[22.130070] (-) TimerEvent: {}
+[22.230927] (-) TimerEvent: {}
+[22.331643] (-) TimerEvent: {}
+[22.432256] (-) TimerEvent: {}
+[22.532874] (-) TimerEvent: {}
+[22.633408] (-) TimerEvent: {}
+[22.733890] (-) TimerEvent: {}
+[22.834396] (-) TimerEvent: {}
+[22.934939] (-) TimerEvent: {}
+[23.035440] (-) TimerEvent: {}
+[23.135977] (-) TimerEvent: {}
+[23.236571] (-) TimerEvent: {}
+[23.337194] (-) TimerEvent: {}
+[23.437750] (-) TimerEvent: {}
+[23.538231] (-) TimerEvent: {}
+[23.638760] (-) TimerEvent: {}
+[23.739304] (-) TimerEvent: {}
+[23.839758] (-) TimerEvent: {}
+[23.940241] (-) TimerEvent: {}
+[24.040719] (-) TimerEvent: {}
+[24.141259] (-) TimerEvent: {}
+[24.241763] (-) TimerEvent: {}
+[24.342434] (-) TimerEvent: {}
+[24.443003] (-) TimerEvent: {}
+[24.543546] (-) TimerEvent: {}
+[24.644261] (-) TimerEvent: {}
+[24.744752] (-) TimerEvent: {}
+[24.845336] (-) TimerEvent: {}
+[24.945836] (-) TimerEvent: {}
+[25.046392] (-) TimerEvent: {}
+[25.146942] (-) TimerEvent: {}
+[25.247468] (-) TimerEvent: {}
+[25.348003] (-) TimerEvent: {}
+[25.448585] (-) TimerEvent: {}
+[25.549320] (-) TimerEvent: {}
+[25.649931] (-) TimerEvent: {}
+[25.750454] (-) TimerEvent: {}
+[25.851058] (-) TimerEvent: {}
+[25.951678] (-) TimerEvent: {}
+[26.052217] (-) TimerEvent: {}
+[26.152770] (-) TimerEvent: {}
+[26.253358] (-) TimerEvent: {}
+[26.353868] (-) TimerEvent: {}
+[26.454372] (-) TimerEvent: {}
+[26.555236] (-) TimerEvent: {}
+[26.655834] (-) TimerEvent: {}
+[26.756305] (-) TimerEvent: {}
+[26.856738] (-) TimerEvent: {}
+[26.957242] (-) TimerEvent: {}
+[27.057724] (-) TimerEvent: {}
+[27.158223] (-) TimerEvent: {}
+[27.258745] (-) TimerEvent: {}
+[27.359265] (-) TimerEvent: {}
+[27.459757] (-) TimerEvent: {}
+[27.560247] (-) TimerEvent: {}
+[27.660719] (-) TimerEvent: {}
+[27.761234] (-) TimerEvent: {}
+[27.861755] (-) TimerEvent: {}
+[27.962282] (-) TimerEvent: {}
+[28.062782] (-) TimerEvent: {}
+[28.163276] (-) TimerEvent: {}
+[28.263836] (-) TimerEvent: {}
+[28.364312] (-) TimerEvent: {}
+[28.464752] (-) TimerEvent: {}
+[28.565204] (-) TimerEvent: {}
+[28.665624] (-) TimerEvent: {}
+[28.766052] (-) TimerEvent: {}
+[28.866468] (-) TimerEvent: {}
+[28.966943] (-) TimerEvent: {}
+[29.067459] (-) TimerEvent: {}
+[29.168189] (-) TimerEvent: {}
+[29.268907] (-) TimerEvent: {}
+[29.369638] (-) TimerEvent: {}
+[29.470216] (-) TimerEvent: {}
+[29.570805] (-) TimerEvent: {}
+[29.671552] (-) TimerEvent: {}
+[29.772781] (-) TimerEvent: {}
+[29.873896] (-) TimerEvent: {}
+[29.974448] (-) TimerEvent: {}
+[30.034222] (agv_bringup) CommandEnded: {'returncode': 0}
+[30.074649] (-) TimerEvent: {}
+[30.175110] (-) TimerEvent: {}
+[30.276613] (-) TimerEvent: {}
+[30.284710] (agv_bringup) JobEnded: {'identifier': 'agv_bringup', 'rc': 0}
+[30.291845] (-) EventReactorShutdown: {}

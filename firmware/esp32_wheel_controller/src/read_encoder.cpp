@@ -22,11 +22,12 @@ struct Pid
     float kd;
     float outLimit;
     float iLimit;
+    float deadband;
     float integral = 0.0f;
     float lastErr = 0.0f;
 
-    Pid(float kp_, float ki_, float kd_, float outLimit_, float iLimit_)
-        : kp(kp_), ki(ki_), kd(kd_), outLimit(outLimit_), iLimit(iLimit_)
+    Pid(float kp_, float ki_, float kd_, float outLimit_, float iLimit_, float deadband_)
+        : kp(kp_), ki(ki_), kd(kd_), outLimit(outLimit_), iLimit(iLimit_), deadband(deadband_)
     {
     }
 
@@ -38,7 +39,8 @@ struct Pid
 
     float compute(float target, float actual, float dt)
     {
-        float err = target - actual;
+        float rawErr = target - actual;
+        float err = (fabsf(rawErr) < deadband) ? 0.0f : rawErr;
 
         if ((err > 0.0f && lastErr < 0.0f) || (err < 0.0f && lastErr > 0.0f))
         {
@@ -97,7 +99,7 @@ const int pwmBits = 8;
 const uint32_t controlMs = 20;
 const uint32_t cmdTimeoutMs = 2000;
 
-const float wheelRadius = 0.065f;
+const float wheelRadius = 0.03f;
 const float wheelBase = 0.170f;
 const float ticksPerRev = 1975.0f;
 const float twoPi = 6.28318530718f;
@@ -105,37 +107,40 @@ const float twoPi = 6.28318530718f;
 const float stopCps = 8.0f;
 const float cpsAlpha = 0.35f;
 const float maxWheelMps = 1.00f;
-const float cmdAccelCpsPerSec = 12000.0f;
-const float cmdDecelCpsPerSec = 3500.0f;
+const float cmdAccelCpsPerSec = 5000.0f;
+const float cmdDecelCpsPerSec = 4500.0f;
 const float stopHoldCps = 35.0f;
 const uint32_t stopHoldMs = 300;
-const int stopBrakePwm = 200;
+const int stopBrakePwmL = 190;
+const int stopBrakePwmR = 230;
 
 const int basePwm = 200;
 const int minPwmL = 68;
-const int minPwmR = 62;
-const int minSpinPwmL = 120;
-const int minSpinPwmR = 120;
+const int minPwmR = 52;
+const int minSpinPwmL = 115;
+const int minSpinPwmR = 110;
 const float baseCpsL = 1680.0f;
-const float baseCpsR = 1740.0f;
+const float baseCpsR = 1950.0f;
 
-const float syncKp = 0.055f;
-const float syncKi = 0.012f;
-const float syncILimit = 300.0f;
-const int syncLimit = 45;
-const int syncStep = 4;
-const float syncAlpha = 0.40f;
+const float syncKp = 0.16f;
+const float syncKi = 0.030f;
+const float syncILimit = 700.0f;
+const int syncLimit = 130;
+const int syncStep = 20;
+const float syncAlpha = 0.15f;
 
 const bool enableDebug = false;
 const uint32_t debugMs = 200;
+const float pidDeadbandCpsL = 25.0f;
+const float pidDeadbandCpsR = 25.0f;
 
 // ============================================================
 // Runtime state
 // ============================================================
 ESP32Encoder encL;
 ESP32Encoder encR;
-Pid pidL(0.18f, 0.040f, 0.001f, 110.0f, 1800.0f);
-Pid pidR(0.18f, 0.040f, 0.001f, 110.0f, 1800.0f);
+Pid pidL(0.24f, 0.065f, 0.0f, 90.0f, 2600.0f, pidDeadbandCpsL);
+Pid pidR(0.24f, 0.065f, 0.0f, 90.0f, 2600.0f, pidDeadbandCpsR);
 
 WheelValue cmdMps = {0.0f, 0.0f};
 WheelValue cmdCps = {0.0f, 0.0f};
@@ -315,6 +320,12 @@ void brakeBoth(int pwm)
     brakeMotor(motorR, pwm);
 }
 
+void brakeBoth(int pwmL, int pwmR)
+{
+    brakeMotor(motorL, pwmL);
+    brakeMotor(motorR, pwmR);
+}
+
 int feedPwm(float target, int minPwm, float baseCps)
 {
     float mag = fabsf(target);
@@ -332,6 +343,8 @@ int feedPwm(float target, int minPwm, float baseCps)
 // ============================================================
 // Target commands
 // ============================================================
+void stopRobot();
+
 void setTargetWheelMps(float leftMps, float rightMps)
 {
     cmdMps.left = clampWheelMps(leftMps);
@@ -365,7 +378,7 @@ void stopRobot()
     resetPid();
     stopHoldActive = true;
     stopHoldUntilMs = millis() + stopHoldMs;
-    brakeBoth(stopBrakePwm);
+    brakeBoth(stopBrakePwmL, stopBrakePwmR);
 }
 
 void updateTargetRamp(float dt)
@@ -437,6 +450,11 @@ int stepToward(int now, int target, int step)
 bool canSyncBalancedPair()
 {
     if (fabsf(targetCps.left) < stopCps || fabsf(targetCps.right) < stopCps)
+    {
+        return false;
+    }
+
+    if ((targetCps.left > 0.0f) != (targetCps.right > 0.0f))
     {
         return false;
     }
@@ -727,7 +745,7 @@ void loop()
     {
         if (shouldHoldStop(now))
         {
-            brakeBoth(stopBrakePwm);
+            brakeBoth(stopBrakePwmL, stopBrakePwmR);
         }
         else
         {

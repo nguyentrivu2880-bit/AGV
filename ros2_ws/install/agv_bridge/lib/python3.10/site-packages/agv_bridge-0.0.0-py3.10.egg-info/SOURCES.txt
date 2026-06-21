@@ -10,6 +10,7 @@ setup.py
 ../../build/agv_bridge/agv_bridge.egg-info/zip-safe
 agv_bridge/__init__.py
 agv_bridge/esp32_bridge_odom.py
+launch/esp32_bridge.launch.py
 resource/agv_bridge
 test/test_copyright.py
 test/test_flake8.py

@@ -1,13 +1,17 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="agv_robot">
   <!-- Geometry parameters -->
-  <xacro:property name="base_length" value="0.320"/>
-  <xacro:property name="base_width" value="0.240"/>
-  <xacro:property name="base_height" value="0.090"/>
-  <xacro:property name="wheel_radius" value="0.065"/>
-  <xacro:property name="wheel_width" value="0.030"/>
-  <xacro:property name="wheel_separation" value="0.170"/>
-  <xacro:property name="caster_radius" value="0.025"/>
+  <xacro:property name="base_length" value="0.210"/>
+  <xacro:property name="base_width" value="0.150"/>
+  <xacro:property name="base_height" value="0.05"/>
+  <xacro:property name="wheel_radius" value="0.03"/>
+  <xacro:property name="wheel_width" value="0.02"/>
+  <xacro:property name="wheel_separation" value="0.190"/>
+  <xacro:property name="base_link_z" value="${2.0 * wheel_radius}"/>
+  <xacro:property name="drive_wheel_x" value="-0.09"/>
+  <xacro:property name="drive_wheel_y" value="${base_width / 2.0 + wheel_width / 2.0}"/>
+  <xacro:property name="caster_radius" value="0.012"/>
+  <xacro:property name="caster_width" value="0.01"/>
 
   <!-- Mass parameters -->
   <xacro:property name="base_mass" value="3.0"/>
@@ -46,8 +50,8 @@
     <color rgba="0.05 0.22 0.55 1.0"/>
   </material>
 
-  <material name="wheel_black">
-    <color rgba="0.02 0.02 0.02 1.0"/>
+  <material name="wheel_yellow">
+    <color rgba="1.0 0.95 0.35 1.0"/>
   </material>
 
   <material name="sensor_gray">
@@ -59,7 +63,7 @@
   <joint name="base_footprint_to_base_link" type="fixed">
     <parent link="base_footprint"/>
     <child link="base_link"/>
-    <origin xyz="0 0 ${wheel_radius}" rpy="0 0 0"/>
+    <origin xyz="0 0 ${base_link_z}" rpy="0 0 0"/>
   </joint>
 
   <link name="base_link">
@@ -86,7 +90,7 @@
         <geometry>
           <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
         </geometry>
-        <material name="wheel_black"/>
+        <material name="wheel_yellow"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="${pi / 2.0} 0 0"/>
@@ -100,45 +104,35 @@
     <joint name="${prefix}_wheel_joint" type="continuous">
       <parent link="base_link"/>
       <child link="${prefix}_wheel_link"/>
-      <origin xyz="0 ${y} 0" rpy="0 0 0"/>
+      <origin xyz="${drive_wheel_x} ${y} ${wheel_radius - base_link_z}" rpy="0 0 0"/>
       <axis xyz="0 1 0"/>
     </joint>
   </xacro:macro>
 
-  <xacro:drive_wheel prefix="left" y="${wheel_separation / 2.0}"/>
-  <xacro:drive_wheel prefix="right" y="${-wheel_separation / 2.0}"/>
+  <xacro:drive_wheel prefix="left" y="${drive_wheel_y}"/>
+  <xacro:drive_wheel prefix="right" y="${-drive_wheel_y}"/>
 
   <link name="caster_link">
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="${pi / 2.0} 0 0"/>
       <geometry>
-        <sphere radius="${caster_radius}"/>
+        <cylinder radius="${caster_radius}" length="${caster_width}"/>
       </geometry>
-      <material name="wheel_black"/>
+      <material name="wheel_yellow"/>
     </visual>
     <collision>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0" rpy="${pi / 2.0} 0 0"/>
       <geometry>
-        <sphere radius="${caster_radius}"/>
+        <cylinder radius="${caster_radius}" length="${caster_width}"/>
       </geometry>
     </collision>
-    <inertial>
-      <mass value="${caster_mass}"/>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <inertia
-        ixx="${2.0 * caster_mass * caster_radius * caster_radius / 5.0}"
-        ixy="0"
-        ixz="0"
-        iyy="${2.0 * caster_mass * caster_radius * caster_radius / 5.0}"
-        iyz="0"
-        izz="${2.0 * caster_mass * caster_radius * caster_radius / 5.0}"/>
-    </inertial>
+    <xacro:cylinder_inertia mass="${caster_mass}" radius="${caster_radius}" length="${caster_width}"/>
   </link>
 
   <joint name="caster_joint" type="fixed">
     <parent link="base_link"/>
     <child link="caster_link"/>
-    <origin xyz="-0.115 0 ${caster_radius - wheel_radius}" rpy="0 0 0"/>
+    <origin xyz="0.06 0 ${caster_radius - base_link_z}" rpy="0 0 0"/>
   </joint>
 
   <link name="imu_link"/>
@@ -169,6 +163,6 @@
   <joint name="laser_joint" type="fixed">
     <parent link="base_link"/>
     <child link="base_laser"/>
-    <origin xyz="0.070 0 ${base_height + 0.025}" rpy="0 0 0"/>
+    <origin xyz="0.070 0 ${base_height + 0.025}" rpy="0 0 ${pi}"/>
   </joint>
 </robot>

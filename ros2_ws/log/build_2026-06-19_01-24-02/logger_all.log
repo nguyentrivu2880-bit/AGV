@@ -1,0 +1,208 @@
+[0.686s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'agv_bringup']
+[0.687s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['agv_bringup'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffaf22a650>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffaf33bb20>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffaf33bb20>>)
+[2.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.047s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.047s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.048s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.049s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.049s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.052s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/pi/agv_project/ros2_ws'
+[2.053s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.054s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.055s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.058s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.058s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.059s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.059s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.159s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.160s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.161s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.164s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.165s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.169s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.171s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.172s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extensions ['ignore', 'ignore_ament_install']
+[2.173s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extension 'ignore'
+[2.174s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extension 'ignore_ament_install'
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extensions ['colcon_pkg']
+[2.176s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extension 'colcon_pkg'
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extensions ['colcon_meta']
+[2.177s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extension 'colcon_meta'
+[2.178s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extensions ['ros']
+[2.178s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extension 'ros'
+[2.180s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extensions ['cmake', 'python']
+[2.181s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extension 'cmake'
+[2.181s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extension 'python'
+[2.182s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extensions ['python_setup_py']
+[2.182s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws) by extension 'python_setup_py'
+[2.183s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extensions ['ignore', 'ignore_ament_install']
+[2.187s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extension 'ignore'
+[2.187s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extension 'ignore_ament_install'
+[2.189s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extensions ['colcon_pkg']
+[2.190s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extension 'colcon_pkg'
+[2.190s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extensions ['colcon_meta']
+[2.190s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extension 'colcon_meta'
+[2.191s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extensions ['ros']
+[2.191s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extension 'ros'
+[2.192s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extensions ['cmake', 'python']
+[2.193s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extension 'cmake'
+[2.219s] Level 1:colcon.colcon_core.package_identification:_identify(ldlidar_ws/ldlidar_sl_sdk) by extension 'python'
+[2.220s] DEBUG:colcon.colcon_core.package_identification:Package 'ldlidar_ws/ldlidar_sl_sdk' with type 'cmake' and name 'ldlidar_sl'
+[2.222s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.223s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.224s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.225s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.226s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.227s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.235s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.236s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.237s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bridge) by extensions ['ignore', 'ignore_ament_install']
+[2.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bridge) by extension 'ignore'
+[2.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bridge) by extension 'ignore_ament_install'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bridge) by extensions ['colcon_pkg']
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bridge) by extension 'colcon_pkg'
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bridge) by extensions ['colcon_meta']
+[2.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bridge) by extension 'colcon_meta'
+[2.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bridge) by extensions ['ros']
+[2.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bridge) by extension 'ros'
+[2.266s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agv_bridge' with type 'ros.ament_python' and name 'agv_bridge'
+[2.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bringup) by extensions ['ignore', 'ignore_ament_install']
+[2.272s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bringup) by extension 'ignore'
+[2.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bringup) by extension 'ignore_ament_install'
+[2.273s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bringup) by extensions ['colcon_pkg']
+[2.274s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bringup) by extension 'colcon_pkg'
+[2.275s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bringup) by extensions ['colcon_meta']
+[2.278s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bringup) by extension 'colcon_meta'
+[2.280s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bringup) by extensions ['ros']
+[2.281s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_bringup) by extension 'ros'
+[2.290s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agv_bringup' with type 'ros.ament_cmake' and name 'agv_bringup'
+[2.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extensions ['ignore', 'ignore_ament_install']
+[2.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extension 'ignore'
+[2.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extension 'ignore_ament_install'
+[2.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extensions ['colcon_pkg']
+[2.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extension 'colcon_pkg'
+[2.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extensions ['colcon_meta']
+[2.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extension 'colcon_meta'
+[2.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extensions ['ros']
+[2.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_description) by extension 'ros'
+[2.304s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agv_description' with type 'ros.ament_cmake' and name 'agv_description'
+[2.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_lidar) by extensions ['ignore', 'ignore_ament_install']
+[2.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_lidar) by extension 'ignore'
+[2.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_lidar) by extension 'ignore_ament_install'
+[2.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_lidar) by extensions ['colcon_pkg']
+[2.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_lidar) by extension 'colcon_pkg'
+[2.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_lidar) by extensions ['colcon_meta']
+[2.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_lidar) by extension 'colcon_meta'
+[2.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_lidar) by extensions ['ros']
+[2.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/agv_lidar) by extension 'ros'
+[2.313s] DEBUG:colcon.colcon_core.package_identification:Package 'src/agv_lidar' with type 'ros.ament_cmake' and name 'agv_lidar'
+[2.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_sl_ros2) by extensions ['ignore', 'ignore_ament_install']
+[2.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_sl_ros2) by extension 'ignore'
+[2.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_sl_ros2) by extension 'ignore_ament_install'
+[2.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_sl_ros2) by extensions ['colcon_pkg']
+[2.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_sl_ros2) by extension 'colcon_pkg'
+[2.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_sl_ros2) by extensions ['colcon_meta']
+[2.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_sl_ros2) by extension 'colcon_meta'
+[2.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_sl_ros2) by extensions ['ros']
+[2.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ldlidar_sl_ros2) by extension 'ros'
+[2.328s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ldlidar_sl_ros2' with type 'ros.ament_cmake' and name 'ldlidar_sl_ros2'
+[2.329s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.330s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.331s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.332s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.334s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.514s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'agv_bridge' in 'src/agv_bridge'
+[2.515s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'agv_description' in 'src/agv_description'
+[2.515s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ldlidar_sl' in 'ldlidar_ws/ldlidar_sl_sdk'
+[2.515s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ldlidar_sl_ros2' in 'src/ldlidar_sl_ros2'
+[2.516s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'agv_lidar' in 'src/agv_lidar'
+[2.519s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.520s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.544s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/pi/ldlidar_ros2_ws/install
+[2.568s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 248 installed packages in /opt/ros/humble
+[2.588s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.097s] Level 5:colcon.colcon_core.verb:set package 'agv_bringup' build argument 'cmake_args' from command line to 'None'
+[3.098s] Level 5:colcon.colcon_core.verb:set package 'agv_bringup' build argument 'cmake_target' from command line to 'None'
+[3.099s] Level 5:colcon.colcon_core.verb:set package 'agv_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.100s] Level 5:colcon.colcon_core.verb:set package 'agv_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[3.102s] Level 5:colcon.colcon_core.verb:set package 'agv_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[3.103s] Level 5:colcon.colcon_core.verb:set package 'agv_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[3.103s] Level 5:colcon.colcon_core.verb:set package 'agv_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[3.104s] Level 5:colcon.colcon_core.verb:set package 'agv_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[3.104s] Level 5:colcon.colcon_core.verb:set package 'agv_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.105s] DEBUG:colcon.colcon_core.verb:Building package 'agv_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/pi/agv_project/ros2_ws/build/agv_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/pi/agv_project/ros2_ws/install/agv_bringup', 'merge_install': False, 'path': '/home/pi/agv_project/ros2_ws/src/agv_bringup', 'symlink_install': False, 'test_result_base': None}
+[3.107s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.115s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.121s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/pi/agv_project/ros2_ws/src/agv_bringup' with build type 'ament_cmake'
+[3.123s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/pi/agv_project/ros2_ws/src/agv_bringup'
+[3.155s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.157s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.158s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.310s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/agv_project/ros2_ws/build/agv_bringup': AMENT_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble PYTHONPATH=/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/agv_bringup -- -j4 -l4
+[5.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/agv_project/ros2_ws/build/agv_bringup' returned '0': AMENT_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble PYTHONPATH=/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/agv_bringup -- -j4 -l4
+[5.477s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/pi/agv_project/ros2_ws/build/agv_bringup': AMENT_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble PYTHONPATH=/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/agv_bringup
+[5.566s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agv_bringup)
+[5.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/pi/agv_project/ros2_ws/build/agv_bringup' returned '0': AMENT_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble PYTHONPATH=/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/agv_bringup
+[5.592s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup' for CMake module files
+[5.597s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup' for CMake config files
+[5.600s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_bringup', 'cmake_prefix_path')
+[5.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/hook/cmake_prefix_path.ps1'
+[5.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/hook/cmake_prefix_path.dsv'
+[5.609s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/hook/cmake_prefix_path.sh'
+[5.614s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup/bin'
+[5.615s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup/lib/pkgconfig/agv_bringup.pc'
+[5.616s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup/lib/python3.10/site-packages'
+[5.619s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup/bin'
+[5.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.ps1'
+[5.631s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.dsv'
+[5.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.sh'
+[5.639s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.bash'
+[5.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.zsh'
+[5.649s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/agv_project/ros2_ws/install/agv_bringup/share/colcon-core/packages/agv_bringup)
+[5.655s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(agv_bringup)
+[5.656s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup' for CMake module files
+[5.660s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup' for CMake config files
+[5.662s] Level 1:colcon.colcon_core.shell:create_environment_hook('agv_bringup', 'cmake_prefix_path')
+[5.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/hook/cmake_prefix_path.ps1'
+[5.668s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/hook/cmake_prefix_path.dsv'
+[5.672s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/hook/cmake_prefix_path.sh'
+[5.677s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup/bin'
+[5.678s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup/lib/pkgconfig/agv_bringup.pc'
+[5.680s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup/lib/python3.10/site-packages'
+[5.684s] Level 1:colcon.colcon_core.environment:checking '/home/pi/agv_project/ros2_ws/install/agv_bringup/bin'
+[5.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.ps1'
+[5.692s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.dsv'
+[5.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.sh'
+[5.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.bash'
+[5.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.zsh'
+[5.708s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/pi/agv_project/ros2_ws/install/agv_bringup/share/colcon-core/packages/agv_bringup)
+[5.709s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.711s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.711s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.712s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.715s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.718s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/agv_project/ros2_ws/install/local_setup.ps1'
+[5.727s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/agv_project/ros2_ws/install/_local_setup_util_ps1.py'
+[5.738s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/agv_project/ros2_ws/install/setup.ps1'
+[5.746s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/agv_project/ros2_ws/install/local_setup.sh'
+[5.752s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/pi/agv_project/ros2_ws/install/_local_setup_util_sh.py'
+[5.758s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/agv_project/ros2_ws/install/setup.sh'
+[5.765s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/agv_project/ros2_ws/install/local_setup.bash'
+[5.771s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/agv_project/ros2_ws/install/setup.bash'
+[5.778s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/pi/agv_project/ros2_ws/install/local_setup.zsh'
+[5.785s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/pi/agv_project/ros2_ws/install/setup.zsh'

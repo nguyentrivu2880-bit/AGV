@@ -22,6 +22,7 @@ class ESP32BridgeOdom(Node):
         self.declare_parameter('port', '/dev/ttyUSB0')
         self.declare_parameter('baudrate', 115200)
         self.declare_parameter('cmd_vel_topic', '/cmd_vel')
+        self.declare_parameter('shaped_cmd_vel_topic', '/cmd_vel_shaped')
         self.declare_parameter('odom_topic', '/odom')
         self.declare_parameter('odom_frame', 'odom')
         self.declare_parameter('base_frame', 'base_footprint')
@@ -46,14 +47,23 @@ class ESP32BridgeOdom(Node):
         # WHEEL_VEL,left_mps,right_mps before sending to ESP32.
         self.declare_parameter('send_cmd_vel_direct', False)
         self.declare_parameter('force_zero_linear_on_spin', True)
-        self.declare_parameter('spin_linear_deadband', 0.02)
-        self.declare_parameter('spin_angular_deadband', 0.05)
+        self.declare_parameter('spin_linear_deadband', 0.04)
+        self.declare_parameter('spin_angular_deadband', 0.02)
+        self.declare_parameter('linear_cmd_deadband', 0.01)
+        self.declare_parameter('min_cmd_linear_x', 0.10)
+        self.declare_parameter('min_cmd_angular_z', 0.27)
+        self.declare_parameter('angular_floor_delay_sec', 0.35)
+        self.declare_parameter('angular_sign_change_delay_sec', 0.40)
+        self.declare_parameter('angular_reverse_release_z', 0.08)
+        self.declare_parameter('cmd_linear_accel_limit', 0.20)
+        self.declare_parameter('cmd_angular_accel_limit', 1.50)
         self.declare_parameter('debug_log', False)
 
         port = self.get_parameter('port').value
         baudrate = int(self.get_parameter('baudrate').value)
 
         self.cmd_vel_topic = self.get_parameter('cmd_vel_topic').value
+        self.shaped_cmd_vel_topic = self.get_parameter('shaped_cmd_vel_topic').value
         self.odom_topic = self.get_parameter('odom_topic').value
         self.odom_frame = self.get_parameter('odom_frame').value
         self.base_frame = self.get_parameter('base_frame').value
@@ -81,6 +91,28 @@ class ESP32BridgeOdom(Node):
         )
         self.spin_linear_deadband = float(self.get_parameter('spin_linear_deadband').value)
         self.spin_angular_deadband = float(self.get_parameter('spin_angular_deadband').value)
+        self.linear_cmd_deadband = float(self.get_parameter('linear_cmd_deadband').value)
+        self.min_cmd_linear_x = float(
+            self.get_parameter('min_cmd_linear_x').value
+        )
+        self.min_cmd_angular_z = float(
+            self.get_parameter('min_cmd_angular_z').value
+        )
+        self.angular_floor_delay_sec = float(
+            self.get_parameter('angular_floor_delay_sec').value
+        )
+        self.angular_sign_change_delay_sec = float(
+            self.get_parameter('angular_sign_change_delay_sec').value
+        )
+        self.angular_reverse_release_z = float(
+            self.get_parameter('angular_reverse_release_z').value
+        )
+        self.cmd_linear_accel_limit = float(
+            self.get_parameter('cmd_linear_accel_limit').value
+        )
+        self.cmd_angular_accel_limit = float(
+            self.get_parameter('cmd_angular_accel_limit').value
+        )
         self.debug_log = bool(self.get_parameter('debug_log').value)
 
         cmd_send_rate_hz = float(self.get_parameter('cmd_send_rate_hz').value)
@@ -91,6 +123,11 @@ class ESP32BridgeOdom(Node):
         self.right_mpt = base_mpt * self.right_distance_scale
 
         self.odom_pub = self.create_publisher(Odometry, self.odom_topic, 20)
+        self.shaped_cmd_pub = self.create_publisher(
+            Twist,
+            self.shaped_cmd_vel_topic,
+            20
+        )
         self.cmd_sub = self.create_subscription(
             Twist,
             self.cmd_vel_topic,
@@ -114,7 +151,15 @@ class ESP32BridgeOdom(Node):
 
         self.latest_linear_x = 0.0
         self.latest_angular_z = 0.0
+        self.sent_linear_x = 0.0
+        self.sent_angular_z = 0.0
+        self.angular_cmd_sign = 0
+        self.pending_angular_floor_sign = 0
+        self.pending_angular_floor_since = 0.0
+        self.pending_angular_sign = 0
+        self.pending_angular_sign_since = 0.0
         self.last_cmd_time = time.monotonic()
+        self.last_cmd_send_time = time.monotonic()
         self.last_odom_debug_time = time.monotonic()
 
         self.running = True
@@ -131,10 +176,18 @@ class ESP32BridgeOdom(Node):
         self.get_logger().info(
             f'ESP32 bridge started on {port} @ {baudrate}. '
             f'left_mpt={self.left_mpt:.8f}, right_mpt={self.right_mpt:.8f}, '
+            f'shaped_cmd_vel_topic={self.shaped_cmd_vel_topic}, '
             f'cmd_wheel_base={self.cmd_wheel_base:.4f}, '
             f'odom_wheel_base={self.odom_wheel_base:.4f}, '
             f'force_zero_linear_on_spin={self.force_zero_linear_on_spin}, '
-            f'send_cmd_vel_direct={self.send_cmd_vel_direct}'
+            f'send_cmd_vel_direct={self.send_cmd_vel_direct}, '
+            f'min_cmd_linear_x={self.min_cmd_linear_x:.3f}, '
+            f'min_cmd_angular_z={self.min_cmd_angular_z:.3f}, '
+            f'angular_floor_delay_sec={self.angular_floor_delay_sec:.3f}, '
+            f'angular_sign_change_delay_sec={self.angular_sign_change_delay_sec:.3f}, '
+            f'angular_reverse_release_z={self.angular_reverse_release_z:.3f}, '
+            f'cmd_linear_accel_limit={self.cmd_linear_accel_limit:.3f}, '
+            f'cmd_angular_accel_limit={self.cmd_angular_accel_limit:.3f}'
         )
 
     def on_param_update(self, params):
@@ -158,6 +211,22 @@ class ESP32BridgeOdom(Node):
                 self.spin_linear_deadband = float(value)
             elif name == 'spin_angular_deadband':
                 self.spin_angular_deadband = float(value)
+            elif name == 'linear_cmd_deadband':
+                self.linear_cmd_deadband = float(value)
+            elif name == 'min_cmd_linear_x':
+                self.min_cmd_linear_x = float(value)
+            elif name == 'min_cmd_angular_z':
+                self.min_cmd_angular_z = float(value)
+            elif name == 'angular_floor_delay_sec':
+                self.angular_floor_delay_sec = float(value)
+            elif name == 'angular_sign_change_delay_sec':
+                self.angular_sign_change_delay_sec = float(value)
+            elif name == 'angular_reverse_release_z':
+                self.angular_reverse_release_z = float(value)
+            elif name == 'cmd_linear_accel_limit':
+                self.cmd_linear_accel_limit = float(value)
+            elif name == 'cmd_angular_accel_limit':
+                self.cmd_angular_accel_limit = float(value)
             elif name == 'debug_log':
                 self.debug_log = bool(value)
             else:
@@ -187,6 +256,143 @@ class ESP32BridgeOdom(Node):
             angle += 2.0 * math.pi
         return angle
 
+    def ramp_toward(self, current, target, max_step):
+        if target > current + max_step:
+            return current + max_step
+        if target < current - max_step:
+            return current - max_step
+        return target
+
+    def sign_of(self, value):
+        return 1 if value >= 0.0 else -1
+
+    def shape_angular_cmd(self, w, is_spin_like):
+        now = time.monotonic()
+
+        if self.min_cmd_angular_z <= 0.0:
+            self.angular_cmd_sign = 0
+            self.pending_angular_floor_sign = 0
+            self.pending_angular_floor_since = 0.0
+            self.pending_angular_sign = 0
+            self.pending_angular_sign_since = 0.0
+            return w, False, False
+
+        if not is_spin_like:
+            self.angular_cmd_sign = 0
+            self.pending_angular_floor_sign = 0
+            self.pending_angular_floor_since = 0.0
+            self.pending_angular_sign = 0
+            self.pending_angular_sign_since = 0.0
+            return w, False, False
+
+        if abs(w) < self.spin_angular_deadband:
+            self.angular_cmd_sign = 0
+            self.pending_angular_floor_sign = 0
+            self.pending_angular_floor_since = 0.0
+            self.pending_angular_sign = 0
+            self.pending_angular_sign_since = 0.0
+            return 0.0, False, False
+
+        desired_sign = self.sign_of(w)
+        magnitude = abs(w)
+        angular_floor_applied = magnitude < self.min_cmd_angular_z
+
+        if angular_floor_applied and self.angular_cmd_sign != desired_sign:
+            if self.pending_angular_floor_sign != desired_sign:
+                self.pending_angular_floor_sign = desired_sign
+                self.pending_angular_floor_since = now
+
+            pending_floor_age = now - self.pending_angular_floor_since
+            if pending_floor_age < self.angular_floor_delay_sec:
+                return 0.0, False, False
+        else:
+            self.pending_angular_floor_sign = 0
+            self.pending_angular_floor_since = 0.0
+
+        target_magnitude = max(magnitude, self.min_cmd_angular_z)
+
+        if self.angular_cmd_sign == 0:
+            self.angular_cmd_sign = desired_sign
+            self.pending_angular_sign = 0
+            self.pending_angular_sign_since = 0.0
+            return desired_sign * target_magnitude, angular_floor_applied, False
+
+        if desired_sign == self.angular_cmd_sign:
+            self.pending_angular_sign = 0
+            self.pending_angular_sign_since = 0.0
+            return desired_sign * target_magnitude, angular_floor_applied, False
+
+        if self.pending_angular_sign != desired_sign:
+            self.pending_angular_sign = desired_sign
+            self.pending_angular_sign_since = now
+
+        pending_age = now - self.pending_angular_sign_since
+        if pending_age < self.angular_sign_change_delay_sec:
+            return (
+                self.angular_cmd_sign * target_magnitude,
+                angular_floor_applied,
+                True
+            )
+
+        if abs(self.sent_angular_z) > self.angular_reverse_release_z:
+            return 0.0, angular_floor_applied, True
+
+        self.angular_cmd_sign = desired_sign
+        self.pending_angular_sign = 0
+        self.pending_angular_sign_since = 0.0
+        return desired_sign * target_magnitude, angular_floor_applied, True
+
+    def shape_cmd_vel(self, v, w, dt):
+        shaped_v = v
+        is_spin_like = abs(v) <= self.spin_linear_deadband
+
+        needs_linear_floor = (
+            abs(shaped_v) >= self.linear_cmd_deadband and
+            abs(shaped_v) < self.min_cmd_linear_x
+        )
+
+        if needs_linear_floor:
+            shaped_v = math.copysign(self.min_cmd_linear_x, shaped_v)
+
+        shaped_w, needs_angular_floor, angular_sign_latched = self.shape_angular_cmd(
+            w,
+            is_spin_like
+        )
+
+        linear_step = max(0.0, self.cmd_linear_accel_limit) * dt
+        angular_step = max(0.0, self.cmd_angular_accel_limit) * dt
+
+        self.sent_linear_x = self.ramp_toward(
+            self.sent_linear_x,
+            shaped_v,
+            linear_step
+        )
+        self.sent_angular_z = self.ramp_toward(
+            self.sent_angular_z,
+            shaped_w,
+            angular_step
+        )
+
+        if abs(shaped_v) < 1e-6 and abs(self.sent_linear_x) < 1e-3:
+            self.sent_linear_x = 0.0
+
+        if abs(shaped_w) < 1e-6 and abs(self.sent_angular_z) < 1e-3:
+            self.sent_angular_z = 0.0
+
+        return (
+            self.sent_linear_x,
+            self.sent_angular_z,
+            needs_linear_floor,
+            needs_angular_floor,
+            angular_sign_latched
+        )
+
+    def publish_shaped_cmd(self, v, w):
+        msg = Twist()
+        msg.linear.x = v
+        msg.angular.z = w
+        self.shaped_cmd_pub.publish(msg)
+
     def cmd_vel_callback(self, msg):
         self.latest_linear_x = float(msg.linear.x)
         self.latest_angular_z = float(msg.angular.z)
@@ -200,13 +406,30 @@ class ESP32BridgeOdom(Node):
 
     def send_latest_cmd(self):
         now = time.monotonic()
+        dt = now - self.last_cmd_send_time
+        if dt <= 0.0 or dt > 0.5:
+            dt = 0.05
+        self.last_cmd_send_time = now
 
         if now - self.last_cmd_time > self.cmd_timeout_sec:
-            v = 0.0
-            w = 0.0
+            raw_v = 0.0
+            raw_w = 0.0
         else:
-            v = self.latest_linear_x
-            w = self.latest_angular_z
+            raw_v = self.latest_linear_x
+            raw_w = self.latest_angular_z
+
+        (
+            v,
+            w,
+            linear_floor_applied,
+            angular_floor_applied,
+            angular_sign_latched
+        ) = self.shape_cmd_vel(
+            raw_v,
+            raw_w,
+            dt
+        )
+        self.publish_shaped_cmd(v, w)
 
         try:
             if self.send_cmd_vel_direct:
@@ -222,7 +445,14 @@ class ESP32BridgeOdom(Node):
                 self.ser.write(line.encode('utf-8'))
 
             if self.debug_log:
-                self.get_logger().info(f'SEND_SERIAL: {line.strip()}')
+                self.get_logger().info(
+                    f'SEND_SERIAL: {line.strip()} '
+                    f'raw=({raw_v:.4f},{raw_w:.4f}) '
+                    f'shaped=({v:.4f},{w:.4f}) '
+                    f'linear_floor={linear_floor_applied} '
+                    f'angular_floor={angular_floor_applied} '
+                    f'angular_sign_latched={angular_sign_latched}'
+                )
 
         except Exception as e:
             self.get_logger().warn(f'Failed to write command to ESP32: {e}')

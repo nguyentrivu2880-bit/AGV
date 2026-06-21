@@ -1,0 +1,11 @@
+[0.000000] (-) TimerEvent: {}
+[0.001517] (-) JobUnselected: {'identifier': 'agv_bridge'}
+[0.002372] (-) JobUnselected: {'identifier': 'agv_description'}
+[0.003032] (-) JobUnselected: {'identifier': 'agv_lidar'}
+[0.003312] (-) JobUnselected: {'identifier': 'ldlidar_sl'}
+[0.003697] (-) JobUnselected: {'identifier': 'ldlidar_sl_ros2'}
+[0.003940] (agv_bringup) JobQueued: {'identifier': 'agv_bringup', 'dependencies': OrderedDict([('agv_bridge', '/home/pi/agv_project/install/agv_bridge'), ('agv_description', '/home/pi/agv_project/install/agv_description'), ('ldlidar_sl_ros2', '/home/pi/agv_project/install/ldlidar_sl_ros2'), ('agv_lidar', '/home/pi/agv_project/install/agv_lidar')])}
+[0.004123] (agv_bringup) JobStarted: {'identifier': 'agv_bringup'}
+[0.098126] (-) TimerEvent: {}
+[0.119055] (agv_bringup) JobEnded: {'identifier': 'agv_bringup', 'rc': 1}
+[0.122820] (-) EventReactorShutdown: {}

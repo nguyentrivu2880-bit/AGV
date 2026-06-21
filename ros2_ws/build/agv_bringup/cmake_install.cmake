@@ -43,6 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/agv_bringup" TYPE DIRECTORY FILES
+    "/home/pi/agv_project/ros2_ws/src/agv_bringup/behavior_trees"
+    "/home/pi/agv_project/ros2_ws/src/agv_bringup/config"
+    "/home/pi/agv_project/ros2_ws/src/agv_bringup/launch"
+    REGEX "/\\_\\_pycache\\_\\_$" EXCLUDE)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/pi/agv_project/ros2_ws/build/agv_bringup/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/agv_bringup")
 endif()
 

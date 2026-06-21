@@ -1,0 +1,76 @@
+[0.000000] (-) TimerEvent: {}
+[0.000687] (-) JobUnselected: {'identifier': 'agv_bringup'}
+[0.001826] (-) JobUnselected: {'identifier': 'agv_description'}
+[0.002618] (-) JobUnselected: {'identifier': 'agv_lidar'}
+[0.002770] (-) JobUnselected: {'identifier': 'ldlidar_sl'}
+[0.002884] (-) JobUnselected: {'identifier': 'ldlidar_sl_ros2'}
+[0.003006] (agv_bridge) JobQueued: {'identifier': 'agv_bridge', 'dependencies': OrderedDict()}
+[0.003710] (agv_bridge) JobStarted: {'identifier': 'agv_bridge'}
+[0.098728] (-) TimerEvent: {}
+[0.199154] (-) TimerEvent: {}
+[0.299668] (-) TimerEvent: {}
+[0.400089] (-) TimerEvent: {}
+[0.500502] (-) TimerEvent: {}
+[0.600906] (-) TimerEvent: {}
+[0.701304] (-) TimerEvent: {}
+[0.801690] (-) TimerEvent: {}
+[0.902065] (-) TimerEvent: {}
+[1.002435] (-) TimerEvent: {}
+[1.102814] (-) TimerEvent: {}
+[1.203361] (-) TimerEvent: {}
+[1.303985] (-) TimerEvent: {}
+[1.404436] (-) TimerEvent: {}
+[1.504846] (-) TimerEvent: {}
+[1.605257] (-) TimerEvent: {}
+[1.705643] (-) TimerEvent: {}
+[1.806037] (-) TimerEvent: {}
+[1.906437] (-) TimerEvent: {}
+[2.006809] (-) TimerEvent: {}
+[2.107181] (-) TimerEvent: {}
+[2.207591] (-) TimerEvent: {}
+[2.307983] (-) TimerEvent: {}
+[2.408381] (-) TimerEvent: {}
+[2.508792] (-) TimerEvent: {}
+[2.609174] (-) TimerEvent: {}
+[2.709545] (-) TimerEvent: {}
+[2.810135] (-) TimerEvent: {}
+[2.910841] (-) TimerEvent: {}
+[2.955706] (agv_bridge) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/agv_bridge', 'build', '--build-base', '/home/pi/agv_project/ros2_ws/build/agv_bridge/build', 'install', '--record', '/home/pi/agv_project/ros2_ws/build/agv_bridge/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi/agv_project/ros2_ws/src/agv_bridge', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/pi', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'CODEX_CI': '1', 'USER': 'pi', 'SSH_CLIENT': '192.168.1.138 39568 22', 'LC_TIME': 'C.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"en","osLocale":"en","resolvedLanguage":"en","defaultMessagesFile":"/home/pi/.vscode-server/cli/servers/Stable-6a44c352bd24569c417e530095901b649960f9f8/server/out/nls.messages.json","locale":"en","availableLanguages":{}}', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'tty', 'DEBUG': 'release', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/home/pi/.vscode-server/cli/servers/Stable-6a44c352bd24569c417e530095901b649960f9f8/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/home/pi', 'GIT_CONFIG_COUNT': '1', 'VSCODE_RECONNECTION_GRACE_TIME': '10800000', 'VSCODE_IPC_HOOK_CLI': '/run/user/1000/vscode-ipc-15e74009-1cdb-46c6-ab33-974dee3530e3.sock', 'ROS_PYTHON_VERSION': '3', 'PAGER': 'cat', 'LC_MONETARY': 'C.UTF-8', 'COPILOT_OTEL_FILE_EXPORTER_PATH': '/dev/null', 'LC_CTYPE': 'C.UTF-8', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'COLCON_PREFIX_PATH': '/home/pi/ldlidar_ros2_ws/install', 'APPLICATION_INSIGHTS_NO_STATSBEAT': 'true', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pi', 'OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT': 'true', 'VSCODE_HANDLES_SIGPIPE': 'true', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'TERM': 'dumb', 'XDG_SESSION_ID': '1', 'VSCODE_CLI_REQUIRE_TOKEN': '9207cd76-95e2-4a2e-a06f-a05d3891ee0b', 'ROS_LOCALHOST_ONLY': '0', 'GIT_CONFIG_VALUE_0': 'explicit', 'PATH': '/home/pi/.codex/tmp/arg0/codex-arg0qOrlO5:/home/pi/.vscode-server/cli/servers/Stable-6a44c352bd24569c417e530095901b649960f9f8/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/pi/.vscode-server/extensions/openai.chatgpt-26.602.71036-linux-arm64/bin/linux-aarch64', 'VSCODE_AGENT_FOLDER': '/home/pi/.vscode-server', 'LC_ADDRESS': 'C.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'LC_TELEPHONE': 'C.UTF-8', 'GH_PAGER': 'cat', 'LS_COLORS': '', 'COPILOT_OTEL_ENABLED': 'true', 'AMENT_PREFIX_PATH': '/opt/ros/humble:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2', 'SHELL': '/bin/bash', 'LC_NAME': 'C.UTF-8', 'MXC_BIN_DIR': '/home/pi/.vscode-server/cli/servers/Stable-6a44c352bd24569c417e530095901b649960f9f8/server/node_modules/@microsoft/mxc-sdk/bin', 'ELECTRON_RUN_AS_NODE': '1', 'GIT_CONFIG_KEY_0': 'safe.bareRepository', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019eb11c-afc2-7c53-b52d-83c16eda0633', 'LC_MEASUREMENT': 'C.UTF-8', 'LC_IDENTIFICATION': 'C.UTF-8', 'GIT_PAGER': 'cat', 'PWD': '/home/pi/agv_project/ros2_ws/build/agv_bridge', 'LC_ALL': 'C.UTF-8', 'SSH_CONNECTION': '192.168.1.138 39568 192.168.1.18 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/agv_project/ros2_ws/build/agv_bridge/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'C.UTF-8', 'LC_PAPER': 'C.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2', 'COPILOT_OTEL_EXPORTER_TYPE': 'file'}, 'shell': False}
+[3.011019] (-) TimerEvent: {}
+[3.111476] (-) TimerEvent: {}
+[3.211906] (-) TimerEvent: {}
+[3.312370] (-) TimerEvent: {}
+[3.413007] (-) TimerEvent: {}
+[3.513388] (-) TimerEvent: {}
+[3.613760] (-) TimerEvent: {}
+[3.714150] (-) TimerEvent: {}
+[3.814537] (-) TimerEvent: {}
+[3.914929] (-) TimerEvent: {}
+[4.015345] (-) TimerEvent: {}
+[4.072652] (agv_bridge) StdoutLine: {'line': b'running egg_info\n'}
+[4.075918] (agv_bridge) StdoutLine: {'line': b'writing ../../build/agv_bridge/agv_bridge.egg-info/PKG-INFO\n'}
+[4.077681] (agv_bridge) StdoutLine: {'line': b'writing dependency_links to ../../build/agv_bridge/agv_bridge.egg-info/dependency_links.txt\n'}
+[4.078763] (agv_bridge) StdoutLine: {'line': b'writing entry points to ../../build/agv_bridge/agv_bridge.egg-info/entry_points.txt\n'}
+[4.080261] (agv_bridge) StdoutLine: {'line': b'writing requirements to ../../build/agv_bridge/agv_bridge.egg-info/requires.txt\n'}
+[4.081552] (agv_bridge) StdoutLine: {'line': b'writing top-level names to ../../build/agv_bridge/agv_bridge.egg-info/top_level.txt\n'}
+[4.092032] (agv_bridge) StdoutLine: {'line': b"reading manifest file '../../build/agv_bridge/agv_bridge.egg-info/SOURCES.txt'\n"}
+[4.097110] (agv_bridge) StdoutLine: {'line': b"writing manifest file '../../build/agv_bridge/agv_bridge.egg-info/SOURCES.txt'\n"}
+[4.098312] (agv_bridge) StdoutLine: {'line': b'running build\n'}
+[4.098888] (agv_bridge) StdoutLine: {'line': b'running build_py\n'}
+[4.100197] (agv_bridge) StdoutLine: {'line': b'running install\n'}
+[4.102427] (agv_bridge) StdoutLine: {'line': b'running install_lib\n'}
+[4.108276] (agv_bridge) StdoutLine: {'line': b'running install_data\n'}
+[4.109369] (agv_bridge) StdoutLine: {'line': b'creating /home/pi/agv_project/ros2_ws/install/agv_bridge/share/agv_bridge/launch\n'}
+[4.110880] (agv_bridge) StdoutLine: {'line': b'copying launch/esp32_bridge.launch.py -> /home/pi/agv_project/ros2_ws/install/agv_bridge/share/agv_bridge/launch\n'}
+[4.111614] (agv_bridge) StdoutLine: {'line': b'running install_egg_info\n'}
+[4.115556] (-) TimerEvent: {}
+[4.120279] (agv_bridge) StdoutLine: {'line': b"removing '/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[4.123063] (agv_bridge) StdoutLine: {'line': b'Copying ../../build/agv_bridge/agv_bridge.egg-info to /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages/agv_bridge-0.0.0-py3.10.egg-info\n'}
+[4.131823] (agv_bridge) StdoutLine: {'line': b'running install_scripts\n'}
+[4.216000] (-) TimerEvent: {}
+[4.222239] (agv_bridge) StdoutLine: {'line': b'Installing esp32_bridge_odom script to /home/pi/agv_project/ros2_ws/install/agv_bridge/lib/agv_bridge\n'}
+[4.224207] (agv_bridge) StdoutLine: {'line': b"writing list of installed files to '/home/pi/agv_project/ros2_ws/build/agv_bridge/install.log'\n"}
+[4.316331] (-) TimerEvent: {}
+[4.346031] (agv_bridge) CommandEnded: {'returncode': 0}
+[4.408467] (agv_bridge) JobEnded: {'identifier': 'agv_bridge', 'rc': 0}
+[4.411851] (-) EventReactorShutdown: {}

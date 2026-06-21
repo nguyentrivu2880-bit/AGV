@@ -1,0 +1,34 @@
+[30.047s] Invoking command in '/home/pi/agv_project/ros2_ws/build/agv_bringup': AMENT_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble PYTHONPATH=/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/agv_bringup -- -j4 -l4
+[30.215s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[31.256s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[31.837s] -- Added test 'flake8' to check Python code syntax and style conventions
+[31.845s] -- Added test 'lint_cmake' to check CMake code style
+[31.851s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[31.875s] -- Added test 'xmllint' to check XML markup files
+[31.883s] -- Configuring done
+[31.933s] -- Generating done
+[31.968s] -- Build files have been written to: /home/pi/agv_project/ros2_ws/build/agv_bringup
+[32.099s] Invoked command in '/home/pi/agv_project/ros2_ws/build/agv_bringup' returned '0': AMENT_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble PYTHONPATH=/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/pi/agv_project/ros2_ws/build/agv_bringup -- -j4 -l4
+[32.165s] Invoking command in '/home/pi/agv_project/ros2_ws/build/agv_bringup': AMENT_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble PYTHONPATH=/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/agv_bringup
+[32.224s] -- Install configuration: ""
+[32.227s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/config
+[32.228s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/config/nav2_params.yaml
+[32.231s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/launch
+[32.234s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/launch/bringup.launch.py
+[32.235s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/launch/navigation.launch.py
+[32.240s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/ament_index/resource_index/package_run_dependencies/agv_bringup
+[32.249s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/ament_index/resource_index/parent_prefix_path/agv_bringup
+[32.250s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/ament_prefix_path.sh
+[32.259s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/ament_prefix_path.dsv
+[32.263s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/path.sh
+[32.264s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/environment/path.dsv
+[32.275s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.bash
+[32.276s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.sh
+[32.289s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.zsh
+[32.303s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/local_setup.dsv
+[32.306s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.dsv
+[32.308s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/ament_index/resource_index/packages/agv_bringup
+[32.308s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/cmake/agv_bringupConfig.cmake
+[32.313s] -- Up-to-date: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/cmake/agv_bringupConfig-version.cmake
+[32.318s] -- Installing: /home/pi/agv_project/ros2_ws/install/agv_bringup/share/agv_bringup/package.xml
+[32.319s] Invoked command in '/home/pi/agv_project/ros2_ws/build/agv_bringup' returned '0': AMENT_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/agv_project/ros2_ws/install/agv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/pi/agv_project/ros2_ws/install/agv_lidar:/home/pi/agv_project/ros2_ws/install/ldlidar_sl_ros2:/home/pi/agv_project/ros2_ws/install/agv_description:/home/pi/ldlidar_ros2_ws/install/ldlidar_ros2:/opt/ros/humble PYTHONPATH=/home/pi/agv_project/ros2_ws/install/agv_bridge/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/pi/agv_project/ros2_ws/build/agv_bringup
